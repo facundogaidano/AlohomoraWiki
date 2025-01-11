@@ -5,8 +5,6 @@ authors:
   name: Juasin Juasin
   title: Lead Director of Alohomora Server
   image_url: https://images-ext-1.discordapp.net/external/oaJeJID3vsTVK2B52QrjTkhpniFUO5RpEUqM8lSJgmE/https/cravatar.eu/helmhead/Juasin/600.png?format=webp
-  socials:
-    discord: joelmarcey
 tags: [Apertura]
 ---
 
