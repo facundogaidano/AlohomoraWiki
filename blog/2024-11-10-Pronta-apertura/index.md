@@ -8,15 +8,13 @@ authors:
 tags: [Apertura]
 ---
 
-Noticia sobre el futuro de **Alohomora server**
-
-<!-- truncate -->
-
 ![Alohomora Server](../alohomora.png)
 
 **Querido mago o bruja**,
 
 Nos complace anunciar que la apertura en fase beta de nuestro servidor de Minecraft (inspirado en el mundo mágico que tanto te gusta) se aproxima. Estamos increíblemente emocionados de compartir esta aventura mágica contigo y de llevarte a un lugar lleno de hechizos, criaturas fantásticas y emocionantes desafíos.
+
+<!-- truncate -->
 
 ### Un proyecto en evolución
 
