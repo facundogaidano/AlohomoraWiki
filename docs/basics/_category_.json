@@ -1,8 +1,9 @@
 {
-  "label": "🤡 Tutorial - Basics",
+  "label": "🤡Tutorial Basics",
   "position": 2,
   "link": {
     "type": "generated-index",
+    "title": "🤡 Tutorial - Basic!!!",
     "description": "5 minutes to learn the most important Docusaurus concepts."
   }
 }
