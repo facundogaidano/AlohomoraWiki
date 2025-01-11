@@ -18,12 +18,12 @@ const config = {
   url: 'https://facundogaidano.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/loprogramakim/',
+  baseUrl: '/AlohomoraWiki/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facundogaidano', // Usually your GitHub org/user name.
-  projectName: 'loprogramakim', // Usually your repo name.
+  projectName: 'AlohomoraWiki', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -85,7 +85,7 @@ const config = {
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://discord.gg/kzWKcAD',
+            href: 'https://discord.alohomora.es',
             label: 'Discord',
             position: 'right',
           },
@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/kzWKcAD',
+                href: 'https://discord.alohomora.es',
               },
               {
                 label: 'X',
