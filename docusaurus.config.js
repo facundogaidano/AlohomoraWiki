@@ -44,10 +44,6 @@ const config = {
         docs: {
           routeBasePath: '/', // Set this value to '/'
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: false,
@@ -55,10 +51,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -77,12 +69,13 @@ const config = {
       // Replace with your project's social card
       image: 'img/fondoAlohomora.png',
       navbar: {
-        title: 'Tutorial',
+        title: null,
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Alohomora Server',
           src: 'img/Alohomora.svg',
         },
         items: [
+          {to: '/', label: 'Wiki', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://discord.alohomora.es',
