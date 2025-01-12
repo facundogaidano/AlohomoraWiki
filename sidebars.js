@@ -76,8 +76,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      collapsed: true,
-      collapsible: false,
+      collapsed: false,
+      collapsible: true,
       label: '💲 Tienda del Servidor',
       items: ['Tienda/Re-Selección', 'Tienda/Apodo', 'Tienda/Lealtades', 'Tienda/Varitas', 'Tienda/Sombreros', 'Tienda/Mascotas'],
     }
