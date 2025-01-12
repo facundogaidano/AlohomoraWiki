@@ -1,0 +1,235 @@
+# Markdown Features
+
+Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+
+## Markdown Heading
+
+```
+# Main Title (Markdown Features)
+
+## Level 2 title (Markdown Heading)
+
+### Level 3 title (MDX and React Components > Highlight)
+
+#### Level 4 title (Lv2 > Lv3 > Lv4)
+```
+
+Los **paréntesis indican** cómo se ordena dentro de la sidebar.
+Más información sobre [Heading](https://docusaurus.io/docs/markdown-features/toc)
+
+## Front Matter
+
+Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+
+```text title="my-doc.md"
+// highlight-start
+---
+id: my-doc-id
+title: My document title
+description: My document description
+slug: /my-custom-url
+---
+// highlight-end
+
+## Markdown heading
+
+Markdown text with [links](./hello.md)
+```
+
+## Links
+
+Regular Markdown links are supported, using url paths or relative file paths.
+
+```md
+Let's see how to [Ir a Normas](/Normas).
+```
+
+Let's see how to [Ir a Normas](/Normas). -> Te lleva a las Normas del SideBar
+
+```md
+Let's see how to [Ir a otras Normas](./Normas).
+```
+
+Let's see how to [Ir a otras Normas](./Normas). -> Te lleva a un archivo *dentro* del Path de este archivo "(\./Normas)" === "(\./docs/basics/Normas)"
+
+## Images
+
+Regular Markdown images are supported.
+
+You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
+
+```md
+![Juasin](/img/600.png)
+```
+
+![Juasin](/img/600.png)
+
+You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
+
+```md
+![Juasin](./img/600.png)
+```
+**No quiero llenar este project con duplicados, es lo mismo que el "Ir a otras Normas", te trae una imagen dentro del Path relativo de este archivo.**
+
+## Code Blocks
+
+Markdown code blocks are supported with Syntax highlighting.
+
+````md
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+````
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+## Admonitions
+
+Docusaurus has a special syntax to create admonitions and callouts: **MIRAR MDX**
+
+```md
+:::info My info
+
+Use this awesome feature option
+
+:::
+
+:::danger Take care
+
+This action is dangerous
+
+:::
+```
+
+:::warning My info
+
+Use this awesome feature option
+
+:::
+
+:::danger Take care
+
+This action is dangerous
+
+:::
+
+## MDX and React Components
+
+[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
+
+### Highlight
+
+```jsx title="src/components/Highlight.js"
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`)
+    }}>
+    {children}
+  </span>
+);
+```
+``` jsx
+import Highlight from '@site/src/components/Highlight';
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+```
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`);
+    }}>
+    {children}
+  </span>
+);
+
+This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+
+This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+
+### Custom Admonition
+
+import Admonition from '@theme/Admonition';
+
+Importando este **Plugins de MDX** nos permite customizar de forma limitada nuestro **Admonition**
+
+```jsx
+import Admonition from '@theme/Admonition';
+
+<Admonition type="tip" icon="🧾" title="Versión de Minecraft">
+  <p>El servidor solo es compatible con la versión **1.16.5** de Minecraft.</p>
+</Admonition>
+
+<Admonition type="info" icon="💡" title="Type válidos">
+  <p>El siguiente componente admite todos los tipos que ya tiene por defecto.</p>
+  <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
+</Admonition>
+```
+
+<Admonition type="tip" icon="🧾" title="Versión de Minecraft">
+  <p>El servidor solo es compatible con la versión **1.16.5** de Minecraft.</p>
+</Admonition>
+
+<Admonition type="info" icon="💡" title="Type válidos">
+  <p>El siguiente componente admite todos los tipos que ya tiene por defecto.</p>
+  <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
+</Admonition>
+
+### Tabs
+
+Docusaurus nos provee del [componente `<Tabs>`](https://docusaurus.io/docs/markdown-features/tabs)
+
+```jsx
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+```
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
