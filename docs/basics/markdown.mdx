@@ -1,11 +1,56 @@
-# Markdown Features
+# Welcome a la documentación.
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+Acá podes escribir texto normal.\
+Si queres hacer un salto de line necesitarás usar `\`
+
+```jsx
+import {  } from "module";
+// highlight-start
+<Hello>Hello World</Hello>
+// highlight-end
+```
+
+# Formateo para texto
+
+```
+*Cursiva*
+```
+
+*Cursiva*
+
+```
+**Negrita**
+```
+**Negrita**
+
+## Lista
+
+```
+- A
+  - a
+  - b
+- B
+```
+
+- A
+  - a
+  - b
+- B
+
+## Clonar Repositorio de GitHub
+
+1 - Instalar Git.\
+2 - En Visual Studio, en una nueva ventana, tocar la opción de Clonar Repositorio.\
+3 - Iniciar sesión en GitHub.\
+4 - Seleccionar carpeta la cual contendrá los archivos del repo.\
+5 - Abrir la Terminal.\
+6 - Ejecutar en la Terminal `npm i`\
+7 - Ejecutar en la Terminal `npm start`
 
 ## Markdown Heading
 
 ```
-# Main Title (Markdown Features)
+# Main Title (Markdown Features) NO PUEDE HABER 2
 
 ## Level 2 title (Markdown Heading)
 
@@ -49,8 +94,16 @@ Let's see how to [Ir a Normas](/Normas). -> Te lleva a las Normas del SideBar
 ```md
 Let's see how to [Ir a otras Normas](./Normas).
 ```
-
 Let's see how to [Ir a otras Normas](./Normas). -> Te lleva a un archivo *dentro* del Path de este archivo "(\./Normas)" === "(\./docs/basics/Normas)"
+
+También se puede poner enlaces para sitios web
+
+```md
+Toque el siguiente texto [Link a Google](https://www.google.com)
+```
+
+Toque el siguiente texto [Link a Google](https://www.google.com)
+
 
 ## Images
 
@@ -197,6 +250,8 @@ import Admonition from '@theme/Admonition';
   <p>El siguiente componente admite todos los tipos que ya tiene por defecto.</p>
   <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
 </Admonition>
+
+Al parecer se pueden editar los [colores de los Admonition](https://docusaurus.community/knowledge/design/admonitions/#%EF%B8%8F-admonition-class-names)
 
 ### Tabs
 
