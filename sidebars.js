@@ -20,8 +20,8 @@ const sidebars = {
 
   // But you can create a sidebar manually
 
-  sidebar: [
-    'index',
+  sidebarWiki: [
+    'Bienvenida',
     {
       type: 'category',
       collapsible: false,

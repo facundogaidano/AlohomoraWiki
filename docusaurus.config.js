@@ -28,9 +28,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
@@ -74,7 +71,12 @@ const config = {
           src: 'img/Alohomora.svg',
         },
         items: [
-          {to: '/', label: 'Wiki', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'sidebarWiki',
+            position: 'left',
+            label: 'Wiki',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://discord.alohomora.es',
@@ -105,6 +107,11 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
