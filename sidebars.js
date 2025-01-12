@@ -52,9 +52,34 @@ const sidebars = {
           type: 'category',
           label: '🏦 Economía',
           collapsible: true,
-          items: ['Economía/Dinero-Golderones'],
+          items: ['Economía/Dinero-Golderones', 'Economía/Puntos-de-experiencia', 'Economía/Créditos-Mágicos', 'Economía/Créditos-de-Examen'],
+        },
+        {
+          type: 'category',
+          label: '🤹 Actividades',
+          collapsible: true,
+          items: ['Actividades/Educación-Mágica', 'Actividades/Misiones', 'Actividades/Acertijos', 'Actividades/Cofres-secretos', 'Actividades/Minijuegos', 'Actividades/Lucha-con-mobs']
+        },
+        {
+          type: 'category',
+          label: '🗺️ Movilidad',
+          collapsible: true,
+          items: ['Movilidad/Red-Fum-de-chimeneas', 'Movilidad/Trasladores', 'Movilidad/Tren-Expreso', 'Movilidad/Bus-Sonámbulo', 'Movilidad/Metro'],
+        },
+        {
+          type: 'category',
+          label: '🃏 Otros',
+          collapsible: true,
+          items: ['Otros/Rangos'] 
         },
       ]
+    },
+    {
+      type: 'category',
+      collapsed: true,
+      collapsible: false,
+      label: '💲 Tienda del Servidor',
+      items: ['Tienda/Re-Selección', 'Tienda/Apodo', 'Tienda/Lealtades', 'Tienda/Varitas', 'Tienda/Sombreros', 'Tienda/Mascotas'],
     }
   ],
 
