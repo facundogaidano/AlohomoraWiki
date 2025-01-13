@@ -1,26 +1,44 @@
 ---
-sidebar_label: '🏷️ Apodo'
+sidebar_label: "🏷️ Apodo"
 ---
+
+export const Highlight = ({ children, color }) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: "2px",
+      color: "#fff",
+      padding: "0.2rem",
+    }}
+  >
+    {children}
+  </span>
+);
+import Admonition from "@theme/Admonition";
 
 # 🏷️ Apodo
 
-Te permite tener un apodo diferente a tu nombre de usuario en Minecraft para que se muestre tanto en el chat como en el menú del tabulador. Podrás activarlo y desactivarlo mediante el menú de /apodo.
+Te permite tener un apodo diferente a tu nombre de usuario en Minecraft para que se muestre tanto en el chat como en el menú del tabulador. Podrás activarlo y desactivarlo mediante el comando: <Highlight color="#e4a911">/apodo</Highlight>.
 
-Tras obtener el ticket en la tienda, deberás ponerte en contacto con el personal del servidor, comunicándoles el apodo que deseas. Una vez validado, podrás disfrutar de tu apodo. 
+Tras obtener el ticket en la <a href="https://tienda.alohomora.es/" target="_blank">tienda</a>, deberás ponerte en contacto con el personal del servidor, comunicándoles el apodo que deseas. Una vez validado, podrás disfrutar de tu apodo.
 
-<details className="trasparent">
+<details className="trasparent" open>
   <summary>
 Normas y consejos para la validación:
   </summary>
-1. Aconsejamos que el nombre aparezca de este modo Nombre_Apellido. Puede no ser de este modo pero pedimos al menos que el nombre sea original.
+1. Aconsejamos que el apodo aparezca de este modo Nombre_Apellido. Puede no ser de este modo, pero pedimos al menos que el apodo sea original.
 
-2. Solo los Administradores o moderadores podrán cambiarte el nombre, no confíes en nadie más que te pida este ticket.
+2. Solo los Administradores o moderadores podrán cambiarte el apodo, no confíes en nadie más que te pida este ticket.
 
 3. Este ticket solo tiene un uso, siempre que quieras volver a cambiar de apodo tendrás que volver a comprar otro ticket. ¡Piensa bien como vas a utilizarlo!
 
-4. Por precaución, pedimos no utilizar nombres completos de la saga de WB con Copyright, ni de los nombres oficiales de las Casas.
+4. Por precaución, pedimos no utilizar apodos completos de la saga de WB con Copyright, ni de los apodos oficiales de las Casas.
 
-5. No utilizar nombres inapropiados, que falten al respeto o incumplan las normas ya vigentes en el servidor.
+5. No utilizar apodos inapropiados, que falten al respeto o incumplan las normas ya vigentes en el servidor.
 
-(*) Si tienes dudas sobre qué nombre utilizar, puedes preguntar antes de obtenerlo en la tienda.
+<Admonition
+  type="danger"
+  icon=" ❕"
+  title="¿No sabes si tu apodo será aceptado?"
+>Si tienes dudas sobre qué apodo utilizar, puedes preguntar antes de obtenerlo en la <a href="https://tienda.alohomora.es/" target="_blank">tienda</a>.</Admonition>
 </details>
