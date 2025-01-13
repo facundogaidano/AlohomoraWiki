@@ -256,7 +256,7 @@ This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 
-### Custom Admonition
+### Custom Admonition (1)
 
 import Admonition from '@theme/Admonition';
 
@@ -284,7 +284,12 @@ import Admonition from '@theme/Admonition';
   <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
 </Admonition>
 
-**Se pueden cambiar los colores**, usando `className` podemos sobrescribir sus colores en `custom.css`.
+
+### Custom Admonition (2)
+
+Hay nuevas formas de cambiar y modificar los colores de todos los Admonitions, con el poder de [Swizzling](https://docusaurus.io/docs/swizzling) y 
+modificando la sección de [Admonition](https://docusaurus.community/knowledge/component-library/existing/Admonitions/) se pueden hacer estas nuevas cosas sin necesidad 
+de ir creando nuevas `className`.
 
 ```css title="/src/css/custom.css"
 .theme-admonition.purple {
@@ -297,18 +302,18 @@ import Admonition from '@theme/Admonition';
 <Admonition className="purple" type="info" icon="🎨" title="Purple!">
   <p>Nuevo color, ¡sin cambiar el type!</p>
 </Admonition>
-<Admonition className="gold" type="info" icon="🎨" title="Gold!">
-  <p>Nuevo color, ¡sin cambiar el type!</p>
+<Admonition type="golden"  title="New!">
+  <p>Nuevo color, ¡sin usar className!</p>
 </Admonition>
 ```
 <Admonition className="purple" type="info" icon="🎨" title="Purple!">
   <p>Nuevo color, ¡sin cambiar el type!</p>
 </Admonition>
-<Admonition className="gold" type="info" icon="🎨" title="Gold!">
-  <p>Nuevo color, ¡sin cambiar el type!</p>
+<Admonition type="golden"  title="New!">
+  <p>Nuevo color, ¡sin usar className!</p>
 </Admonition>
 
-La lista de colores posibles son: `purple`, `gold`, `hacer más colores`
+~~La lista de colores posibles son: `purple`, `gold`, `hacer más colores`~~
 
 ### Tabs
 

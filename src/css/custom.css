@@ -33,6 +33,13 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.alert--golden {
+  --ifm-alert-background-color: #866e35;
+  --ifm-alert-background-color-highlight: #ce981b3d;
+  --ifm-alert-foreground-color: rgb(255,255,255);
+  --ifm-alert-border-color: #f2c14e;
+}
+
 details.trasparent {
   --docusaurus-details-decoration-color: var(--ifm-color-primary);
   background-color: transparent;

@@ -42,6 +42,19 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+            admonitions: {
+              keywords: [
+                  'info',
+                  'success',
+                  'danger',
+                  'note',
+                  'tip',
+                  'warning',
+                  'important',
+                  'caution',
+                  'golden',
+              ],
+          },
           routeBasePath: '/', // Set this value to '/'
           sidebarPath: './sidebars.js',
         },
