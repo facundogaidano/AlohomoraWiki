@@ -43,12 +43,26 @@ span.goldTitle {
   color: var(--ifm-color-primary)
 }
 
+details.trasparent {
+  --docusaurus-details-decoration-color: var(--ifm-color-primary);
+  background-color: transparent;
+  border-color: var(--ifm-color-primary);
+}
+
+span.goldTitle {
+  color: var(--ifm-color-primary)
+}
+
 .navbar__brand {
   margin-right: 0rem;
 }
 
 .menu_SIkG {
   background-color: #180f1c;
+}
+
+.customdetails {
+  --docusaurus-details-decoration-color: #mycolor;
 }
 
 .customdetails {
@@ -66,4 +80,9 @@ span.goldTitle {
 
 span {
   margin: 0;
+}
+
+.theme-admonition.purple {
+  background-color: #350847;
+  border-color: purple;
 }
