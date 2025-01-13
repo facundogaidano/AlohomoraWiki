@@ -33,6 +33,16 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+details.trasparent {
+  --docusaurus-details-decoration-color: var(--ifm-color-primary);
+  background-color: transparent;
+  border-color: var(--ifm-color-primary);
+}
+
+span.goldTitle {
+  color: var(--ifm-color-primary)
+}
+
 .navbar__brand {
   margin-right: 0rem;
 }
