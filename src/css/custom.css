@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
   --ifm-color-primary: #350847;
@@ -33,6 +33,22 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.hero__subtitle {
+  font-family: 'Merriweather';
+  color: #f0ba30;
+}
+
+.jugadores {
+  font-size: 1.25rem;
+}
+
+.alert--golden {
+  --ifm-alert-background-color: #866e35;
+  --ifm-alert-background-color-highlight: #ce981b3d;
+  --ifm-alert-foreground-color: rgb(255,255,255);
+  --ifm-alert-border-color: #f2c14e;
+}
+
 details.trasparent {
   --docusaurus-details-decoration-color: var(--ifm-color-primary);
   background-color: transparent;
@@ -41,10 +57,6 @@ details.trasparent {
 
 span.goldTitle {
   color: var(--ifm-color-primary)
-}
-
-.navbar__brand {
-  margin-right: 0rem;
 }
 
 .menu_SIkG {

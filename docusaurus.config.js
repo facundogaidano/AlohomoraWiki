@@ -42,7 +42,20 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // Set this value to '/'
+            admonitions: {
+              keywords: [
+                  'info',
+                  'success',
+                  'danger',
+                  'note',
+                  'tip',
+                  'warning',
+                  'important',
+                  'caution',
+                  'golden',
+              ],
+          },
+          routeBasePath: '/wiki', // Set this value to '/'
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -68,7 +81,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/fondoAlohomora.png',
       navbar: {
-        title: null,
+        title: 'Inicio',
         logo: {
           alt: 'Alohomora Server',
           src: 'img/Alohomora.svg',
@@ -79,7 +92,7 @@ const config = {
             sidebarId: 'sidebarWiki',
             position: 'left',
             label: 'Wiki',
-            to: '/',
+            to: '/wiki',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
