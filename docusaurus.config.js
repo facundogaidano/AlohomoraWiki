@@ -83,6 +83,11 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://tienda.alohomora.es',
+            label: 'Tienda',
+            position: 'right',
+          },,
+          {
             href: 'https://discord.alohomora.es',
             label: 'Discord',
             position: 'right',
@@ -106,7 +111,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Alohomora Server.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Alohomora Server. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
