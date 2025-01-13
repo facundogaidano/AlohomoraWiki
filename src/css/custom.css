@@ -41,6 +41,10 @@ html[data-theme='dark'] {
   background-color: #180f1c;
 }
 
+.customdetails {
+  --docusaurus-details-decoration-color: #mycolor;
+}
+
 .footer {
   background-color: #1c1221;
   padding: 1.5rem;
@@ -48,4 +52,8 @@ html[data-theme='dark'] {
 
 .navbar {
   background-color: #19101e;
+}
+
+span {
+  margin: 0;
 }
