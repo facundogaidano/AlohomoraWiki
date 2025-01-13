@@ -55,7 +55,7 @@ const config = {
                   'golden',
               ],
           },
-          routeBasePath: '/', // Set this value to '/'
+          routeBasePath: '/wiki', // Set this value to '/'
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -81,7 +81,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/fondoAlohomora.png',
       navbar: {
-        title: null,
+        title: 'Inicio',
         logo: {
           alt: 'Alohomora Server',
           src: 'img/Alohomora.svg',
@@ -92,7 +92,7 @@ const config = {
             sidebarId: 'sidebarWiki',
             position: 'left',
             label: 'Wiki',
-            to: '/',
+            to: '/wiki',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
