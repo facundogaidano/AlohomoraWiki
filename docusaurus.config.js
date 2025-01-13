@@ -106,7 +106,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Alohomora Server. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Alohomora Server.`,
       },
       prism: {
         theme: prismThemes.github,
