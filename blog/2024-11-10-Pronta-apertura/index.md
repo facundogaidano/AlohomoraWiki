@@ -1,5 +1,5 @@
 ---
-slug: noticias-sobre-la-apertura
+slug: Noticias-sobre-la-apertura
 title: Noticias sobre la apertura
 authors:
   name: Juasin Juasin
