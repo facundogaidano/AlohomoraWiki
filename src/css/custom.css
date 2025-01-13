@@ -72,6 +72,7 @@ span.goldTitle {
 .footer {
   background-color: #1c1221;
   padding: 1.5rem;
+  color: #636363;
 }
 
 .navbar {
@@ -84,5 +85,10 @@ span {
 
 .theme-admonition.purple {
   background-color: #350847;
+  border-color: purple;
+}
+
+.theme-admonition.gold {
+  background-color: #f0ba30;
   border-color: purple;
 }
