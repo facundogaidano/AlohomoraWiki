@@ -86,7 +86,7 @@ const config = {
             href: 'https://tienda.alohomora.es',
             label: 'Tienda',
             position: 'right',
-          },,
+          },
           {
             href: 'https://discord.alohomora.es',
             label: 'Discord',
