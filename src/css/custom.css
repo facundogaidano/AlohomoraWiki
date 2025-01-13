@@ -49,7 +49,6 @@ html[data-theme='dark'] {
   --ifm-alert-border-color: #f2c14e;
 }
 
-
 details.trasparent {
   --docusaurus-details-decoration-color: var(--ifm-color-primary);
   background-color: transparent;
