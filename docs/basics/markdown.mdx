@@ -3,14 +3,7 @@
 Acá podes escribir texto normal.\
 Si queres hacer un salto de line necesitarás usar `\`
 
-```jsx
-import {  } from "module";
-// highlight-start
-<Hello>Hello World</Hello>
-// highlight-end
-```
-
-# Formateo para texto
+## Formateo para texto
 
 ```
 *Cursiva*
@@ -198,6 +191,24 @@ This action is dangerous
 
 [MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
 
+### How to highlight text inside a Code block
+
+Con las doble barras juntas se hace el estilo.
+
+```jsx
+import {  } from "module";
+/ / highlight-start
+<Hello>Hello World</Hello>
+/ / highlight-end
+```
+
+```jsx
+import {  } from "module";
+// highlight-start
+<Hello>Hello World</Hello>
+// highlight-end
+```
+
 ### Highlight
 
 ```jsx title="src/components/Highlight.js"
@@ -273,7 +284,31 @@ import Admonition from '@theme/Admonition';
   <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
 </Admonition>
 
-Al parecer se pueden editar los [colores de los Admonition](https://docusaurus.community/knowledge/design/admonitions/#%EF%B8%8F-admonition-class-names)
+**Se pueden cambiar los colores**, usando `className` podemos sobrescribir sus colores en `custom.css`.
+
+```css title="/src/css/custom.css"
+.theme-admonition.purple {
+  background-color: #350847;
+  border-color: purple;
+}
+```
+
+```jsx title="/docs/basics/markdown.mdx"
+<Admonition className="purple" type="info" icon="🎨" title="Purple!">
+  <p>Nuevo color, ¡sin cambiar el type!</p>
+</Admonition>
+<Admonition className="gold" type="info" icon="🎨" title="Gold!">
+  <p>Nuevo color, ¡sin cambiar el type!</p>
+</Admonition>
+```
+<Admonition className="purple" type="info" icon="🎨" title="Purple!">
+  <p>Nuevo color, ¡sin cambiar el type!</p>
+</Admonition>
+<Admonition className="gold" type="info" icon="🎨" title="Gold!">
+  <p>Nuevo color, ¡sin cambiar el type!</p>
+</Admonition>
+
+La lista de colores posibles son: `purple`, `gold`, `hacer más colores`
 
 ### Tabs
 
