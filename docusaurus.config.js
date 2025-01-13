@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Alohomora',
-  tagline: 'Adentrate en el mundo mágico de Alohomora',
+  tagline: 'Adéntrate en el mundo mágico de Alohomora',
   favicon: 'img/600.ico',
 
   // Set the production url of your site here
@@ -82,6 +82,11 @@ const config = {
             to: '/',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://tienda.alohomora.es',
+            label: 'Tienda',
+            position: 'right',
+          },
           {
             href: 'https://discord.alohomora.es',
             label: 'Discord',
