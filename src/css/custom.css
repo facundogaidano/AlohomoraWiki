@@ -72,6 +72,7 @@ span.goldTitle {
 .footer {
   background-color: #1c1221;
   padding: 1.5rem;
+  color: #636363;
 }
 
 .navbar {
@@ -86,3 +87,4 @@ span {
   background-color: #350847;
   border-color: purple;
 }
+
