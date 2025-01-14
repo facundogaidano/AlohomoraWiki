@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Columns from '../Columns';
+import Column from '../Column';
 
 const FeatureList = [
   {
@@ -49,16 +51,48 @@ function Feature({Svg, title, description}) {
   );
 }
 
+function DatosDere({video, title, text}) {
+  return (
+    <Columns>
+      <Column className='text--center, featureSvg'>
+        <video aria-hidden="true" playsinline="" autoplay="true" muted="true" loop="true" width={525} className='borde-curvas'>
+          <source src="https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4" type="video/mp4" />
+        </video>
+      </Column>
+      <Column className='text--justify padding-vert--md'>
+        <Heading as='h3'>{title}</Heading>
+        {text}
+      </Column>
+    </Columns>
+  )
+}
+function DatosIzq({video, title, text}) {
+  return (
+    <Columns>
+      <Column className='text--left padding-vert--md'>
+        <Heading as='h3'>{title}</Heading>
+        {text}
+      </Column>
+      <Column className='text--center featureSvg'>
+        <video aria-hidden="true" playsinline="" autoplay="true" muted="true" loop="true" width={525} className='borde-curvas'>
+          <source src="//starlink.ua/media/mod_starlink/car-blur.webm" type="video/webm" />
+        </video>
+      </Column>
+    </Columns>
+  )
+}
+
+
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <div>
+      <section className={styles.features}>
+        <div className="container">
+          <DatosDere video={'img/comedor.png'} title={'My text column'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}/>
+          <p></p>
+          <DatosIzq video={'img/comedor.png'} title={'My text column'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}/>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

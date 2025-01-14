@@ -87,19 +87,31 @@ span {
 }
 
 .hero--primary {
-  background-image: url(/static/img/backgroundImg.png);
+  background: 
+    linear-gradient(0deg, rgba(32,21,38,0.5914740896358543) 45%, rgba(32,21,38,0) 100%),
+    /* url(/static/img/backgroundImg.png); */
+    url(https://media.discordapp.net/attachments/423996253895131147/515582276416045057/2018-11-23_14.39.42.png?ex=67874a29&is=6785f8a9&hm=ce6a5041c7052b04885642208bc50b47ad0dffcffcfbf205fd325125741b2318&=&format=webp&quality=lossless&width=1276&height=676);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 0.25rem solid #f6d581;
+  border-bottom: 0.10rem solid #f6d581;
 }
 
 .features_t9lD {
-/*   background-image: url(/static/img/featuresBG.png);
-  background-position: center bottom -280px;
-  background-repeat: no-repeat; */
-  background-size: cover;
-  border-top: 0.25rem solid #f6d581;
+    /* url(/static/img/featuresBG.png);
+  background-position: center center;
+  background-size: cover; */
+  /* background-color: #180f1c; */
+  background-color: transparent !important;
+}
+
+.fondo_gradiant {
+  background:
+    linear-gradient(135deg, rgb(93, 0, 133) 0%, rgba(53,8,71,1) 100%);
+}
+
+.borde-curvas {
+  border-radius: 15px
 }
 
 @media screen and (max-width: 1080px) {
