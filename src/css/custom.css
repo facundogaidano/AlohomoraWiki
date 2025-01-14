@@ -82,3 +82,33 @@ span {
   border-color: purple;
 }
 
+.navbar__brand {
+  margin: 0;
+}
+
+.hero--primary {
+  background-image: url(/static/img/backgroundImg.png);
+  background-position: center bottom -280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0.25rem solid #f6d581;
+}
+
+.features_t9lD {
+  background-image: url(/static/img/featuresBG.png);
+  background-position: center bottom -280px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0.25rem solid #f6d581;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero--primary {
+    background-position: center center;
+  }
+
+  .features_t9lD {
+    background-position: center center;
+  }
+}
+
