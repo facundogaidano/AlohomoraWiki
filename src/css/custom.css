@@ -88,16 +88,16 @@ span {
 
 .hero--primary {
   background-image: url(/static/img/backgroundImg.png);
-  background-position: center bottom -280px;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 0.25rem solid #f6d581;
 }
 
 .features_t9lD {
-  background-image: url(/static/img/featuresBG.png);
+/*   background-image: url(/static/img/featuresBG.png);
   background-position: center bottom -280px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   background-size: cover;
   border-top: 0.25rem solid #f6d581;
 }
