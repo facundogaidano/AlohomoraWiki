@@ -47,7 +47,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          <img src='img/Juasin.svg' width={"350"} />
+          <img src='img/AlohomoraSVG.svg' width={"750"} />
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className='jugadores'>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format=".../{max}" /></b></p>

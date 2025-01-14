@@ -81,10 +81,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/fondoAlohomora.png',
       navbar: {
-        title: 'Inicio',
+        title: null,
         logo: {
           alt: 'Alohomora Server',
-          src: 'img/Alohomora.svg',
+          src: 'img/AlohomoraSVG.svg',
         },
         items: [
           {
@@ -118,7 +118,7 @@ const config = {
                 href: 'https://discord.alohomora.es',
               },
               {
-                label: 'X',
+                label: 'X / Twitter',
                 href: 'https://x.com/docusaurus',
               },
             ],
