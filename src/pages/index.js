@@ -69,7 +69,7 @@ export default function Home() {
     <Layout
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <main className='fondo_gradiant'>
+      <main>
         <HomepageFeatures />
       </main>
     </Layout>
