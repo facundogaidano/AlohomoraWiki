@@ -64,6 +64,19 @@ html[data-theme='dark'] {
   font-size: 1.25rem;
 }
 
+.whats-new-feature__eyebrow {
+  font-size: 0.75rem;
+  line-height: 0.6875rem;
+  color: #180f1c;
+  background-color: #f0ba30;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  padding: 8px;
+  text-transform: uppercase;
+  width: fit-content
+}
+
 .alert--golden {
   --ifm-alert-background-color: #866e35;
   --ifm-alert-background-color-highlight: #ce981b3d;
@@ -127,11 +140,7 @@ span {
   /* background-color: transparent !important; */
 }
 
-.VideoIzq {
-  width: 34rem;
-}
-
-.VideoDere {
+.Video {
   width: 34rem;
 }
 
@@ -161,11 +170,7 @@ span {
     background-position: center center;
   }
 
-  .VideoIzq {
-    width: 16rem;
-  }
-  
-  .VideoDere {
+  .Video {
     width: 16rem;
   }
 

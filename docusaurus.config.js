@@ -127,7 +127,7 @@ const config = {
               },
               {
                 label: 'X / Twitter',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/AlohomoraServer',
               },
             ],
           },
