@@ -87,13 +87,13 @@ export default function HomepageFeatures() {
       </section>
       <section className={styles.features}>
         <div className="container">
-          <DatosDere video={'img/comedor.png'} title={'My text column'} text={'nostrud consectetur ad eiusmod cillum exercitation nostrud dolor nulla ipsum duis aute est id do sit tempor sint pariatur exercitation id nostrud voluptate aliqua veniam qui deserunt officia quis culpa cillum adipisicing sint duis incididunt nisi qui ipsum cillum ad dolore exercitation mollit est excepteur incididunt velit voluptate eiusmod laboris'}/>
+          <DatosDere video={'img/comedor.png'} title={'Explora un vasto mundo lleno de secretos'} text={'Sumérgete en un entorno mágico donde cada rincón puede esconder sorpresas y misterios. Aventúrate por pasadizos ocultos, descubre habitaciones secretas llenas de historia y maravíllate con paisajes impresionantes y llenos de vida.'}/>
           <p></p>
-          <DatosIzq video={'img/comedor.png'} title={'My text column'} text={'nostrud consectetur ad eiusmod cillum exercitation nostrud dolor nulla ipsum duis aute est id do sit tempor sint pariatur exercitation id nostrud voluptate aliqua veniam qui deserunt officia quis culpa cillum adipisicing sint duis incididunt nisi qui ipsum cillum ad dolore exercitation mollit est excepteur incididunt velit voluptate eiusmod laboris'}/>
+          <DatosIzq video={'img/comedor.png'} title={'Domina extraordinarios hechizos'} text={'Aprende y mejora tus habilidades mágicas hasta su máximo potencial para aumentar tu poder y maestría. Experimenta con distintos conjuros, perfecciona tu técnica y combina diferentes encantamientos que te ayudarán en tus aventuras.'}/>
           <p></p>
-          <DatosDere video={'img/comedor.png'} title={'My text column'} text={'nostrud consectetur ad eiusmod cillum exercitation nostrud dolor nulla ipsum duis aute est id do sit tempor sint pariatur exercitation id nostrud voluptate aliqua veniam qui deserunt officia quis culpa cillum adipisicing sint duis incididunt nisi qui ipsum cillum ad dolore exercitation mollit est excepteur incididunt velit voluptate eiusmod laboris'}/>
+          <DatosDere video={'img/comedor.png'} title={'Completa misiones únicas'} text={'Enfréntate a emocionantes misiones que pondrán a prueba tu ingenio y habilidad. Ayuda a intrigantes personajes con sus problemas, resuelve complejos acertijos y demuestra tu ingenio en pruebas desafiantes que te llenarán de experiencia y pericia.'}/>
           <p></p>
-          <DatosIzq video={'img/comedor.png'} title={'My text column'} text={'nostrud consectetur ad eiusmod cillum exercitation nostrud dolor nulla ipsum duis aute est id do sit tempor sint pariatur exercitation id nostrud voluptate aliqua veniam qui deserunt officia quis culpa cillum adipisicing sint duis incididunt nisi qui ipsum cillum ad dolore exercitation mollit est excepteur incididunt velit voluptate eiusmod laboris'}/>
+          <DatosIzq video={'img/comedor.png'} title={'Equipamiento y transporte hechizado'} text={'Equípate con los más increíbles artilugios mágicos y medios de transporte encantados. Desde tu confiable varita hasta trasladores y escobas voladoras que te llevarán a lugares que nunca habrías imaginado. ¡Todo lo necesario para que tu aventura sea inolvidable!'}/>
         </div>
       </section>
     </div>
