@@ -8,7 +8,7 @@ authors:
 tags: [Apertura]
 ---
 
-![Alohomora Server](../alohomora.png)
+![Alohomora Server](@site/static/img/fondoAlohomora_noBG.png)
 
 **Querido mago o bruja**,
 

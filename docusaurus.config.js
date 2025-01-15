@@ -102,8 +102,8 @@ const config = {
           },
           {
             href: 'https://discord.alohomora.es',
-            label: 'Discord',
             position: 'right',
+            className: 'navbar--discord-link',
           },
         ],
       },
