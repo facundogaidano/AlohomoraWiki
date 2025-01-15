@@ -6,22 +6,20 @@ import Column from '../Column';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Vive tu Aventura Mágica en Minecraft',
     Svg: require('@site/static/img/Juasin.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Disfruta de un servidor estilo MMORPG, donde la magia y la aventura se entrelazan. ¡Descubre pasadizos secretos, completa misiones y domina hechizos poderosos!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Descubre este Servidor de Minecraft 1.16.5',
     Svg: require('@site/static/img/Juasin.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explora un servidor de Minecraft Premium de cuentas oficiales, versión 1.16.5. Sumérgete en una experiencia única llena de magia, secretos y desafíos.
       </>
     ),
   },
