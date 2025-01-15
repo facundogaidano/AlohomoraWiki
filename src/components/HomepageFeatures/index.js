@@ -7,7 +7,7 @@ import Column from '../Column';
 const FeatureList = [
   {
     title: 'Vive tu Aventura Mágica en Minecraft',
-    Svg: require('@site/static/img/Juasin.svg').default,
+    Svg: require('@site/static/img/map.svg').default,
     description: (
       <>
         Disfruta de un servidor estilo MMORPG, donde la magia y la aventura se entrelazan. ¡Descubre pasadizos secretos, completa misiones y domina hechizos poderosos!
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Descubre este Servidor de Minecraft 1.16.5',
-    Svg: require('@site/static/img/Juasin.svg').default,
+    Svg: require('@site/static/img/1-16-5.svg').default,
     description: (
       <>
         Explora un servidor de Minecraft Premium de cuentas oficiales, versión 1.16.5. Sumérgete en una experiencia única llena de magia, secretos y desafíos.
@@ -87,8 +87,8 @@ function Feature({Svg, title, description}) {
       <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <Heading as="h3" className='titulo'>{title}</Heading>
+        <p className='cuerpo'>{description}</p>
       </div>
     </div>
   );
@@ -111,21 +111,21 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
   return (
     <>
       {flipped ? (
-        <Columns className='flipped'>
-          <Column className='text--center featureSvg'>{videoElement}</Column>
-          <Column className='text--justify padding-vert--md'>
+        <Columns className='flipped row row--no-gutters'>
+          <Column className='text--center'>{videoElement}</Column>
+          <Column className='text--justify' style={{alignSelf: 'center'}}>
             <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
-            <Heading as='h3'>{title}</Heading>
-            {text}
+            <Heading as='h3' className='textoo titulo'>{title}</Heading>
+            <div className='textoo cuerpo'>{text}</div>
           </Column>
         </Columns>
       ) : (
-        <Columns>
-          <Column className='text--center featureSvg'>{videoElement}</Column>
-          <Column className='text--justify padding-vert--md'>
-            <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
-            <Heading as='h3'>{title}</Heading>
-            {text}
+        <Columns className='row row--no-gutters'>
+          <Column className='text--center'>{videoElement}</Column>
+          <Column className='text--justify' style={{alignSelf: 'center'}}>
+          <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
+          <Heading as='h3' className='textoo titulo'>{title}</Heading>
+            <div className='textoo cuerpo'>{text}</div>
           </Column>
         </Columns>
       )}
