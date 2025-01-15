@@ -82,7 +82,7 @@ span.goldTitle {
 }
 
 .menu_SIkG {
-  background-color: #180f1c;
+  background-color: #180f1c; 
 }
 
 .footer {
@@ -152,7 +152,7 @@ span {
   justify-content: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 996px) {
   .hero--primary {
     background-position: center center;
   }
@@ -167,5 +167,9 @@ span {
   
   .VideoDere {
     width: 16rem;
+  }
+
+  .navbar-sidebar {
+    background-color: #180f1c;
   }
 }

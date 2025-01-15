@@ -118,6 +118,14 @@ const config = {
                 href: 'https://discord.alohomora.es',
               },
               {
+                label: 'Youtube',
+                href: 'https://www.youtube.com/@AlohomoraServer',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/alohomoraserver',
+              },
+              {
                 label: 'X / Twitter',
                 href: 'https://x.com/docusaurus',
               },
