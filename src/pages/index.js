@@ -12,7 +12,7 @@ function HomepageHeader() {
   useEffect(() => {
     const script = document.createElement('script');
   
-    script.src = "https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js";
+    script.src = "https://rawcdn.githack.com/facundogaidano/mc-player-counter/refs/heads/master/src/mc-player-counter.js";
     script.async = true;
   
     document.body.appendChild(script);
