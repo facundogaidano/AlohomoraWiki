@@ -7,7 +7,7 @@
 
 class PlayerCounter {
   constructor({ ip, element, format, refreshRate }) {
-    format = format || '{online}';
+    format = format || '{Online}';
     refreshRate = refreshRate || 60 * 1000;
 
     if (!ip) {
@@ -38,23 +38,23 @@ class PlayerCounter {
     request.onreadystatechange = () => {
       if (request.readyState !== 4 || request.status !== 200) return;
 
-      const FORMAT_REGEX = /{\b(online|max)\b}/ig;
+      const FORMAT_REGEX = /{\b(Online|max)\b}/ig;
       const response = JSON.parse(request.responseText);
       const displayStatus = this.element.getAttribute('data-playercounter-status');
 
       // Display server status.
-      // offline/online
+      // offline/Online
       if (displayStatus !== null) {
-        this.element.innerText = response.online ? 'online' : 'offline';
+        this.element.innerText = response.Online ? 'Online' : 'Offline';
         return;
       }
 
       // Display online players
       // Make sure server is online
-      if (response.online) {
+      if (response.Online) {
         this.element.innerHTML = this.format.replace(FORMAT_REGEX, (_, group) => (
           // Change 'online' to 'now' to keep backward compatibility
-          response.players[group === 'online' ? 'now' : group])
+          response.players[group === 'Online' ? 'now' : group])
         );
       }
     };

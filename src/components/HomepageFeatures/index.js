@@ -113,7 +113,7 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
       {flipped ? (
         <Columns className='flipped row row--no-gutters'>
           <Column className='text--center'>{videoElement}</Column>
-          <Column className='text--justify' style={{alignSelf: 'center'}}>
+          <Column className='text--left' style={{alignSelf: 'center'}}>
             <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
             <Heading as='h3' className='textoo titulo'>{title}</Heading>
             <div className='textoo cuerpo'>{text}</div>
@@ -122,7 +122,7 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
       ) : (
         <Columns className='row row--no-gutters'>
           <Column className='text--center'>{videoElement}</Column>
-          <Column className='text--justify' style={{alignSelf: 'center'}}>
+          <Column className='text--left' style={{alignSelf: 'center'}}>
           <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
           <Heading as='h3' className='textoo titulo'>{title}</Heading>
             <div className='textoo cuerpo'>{text}</div>

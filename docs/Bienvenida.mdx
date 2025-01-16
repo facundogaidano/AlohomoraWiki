@@ -4,10 +4,37 @@ slug: '/'
 hide_table_of_contents: true
 ---
 import Admonition from '@theme/Admonition';
+import { useEffect } from 'react';
+
+export function ServerData() {
+  useEffect(() => {
+    const script = document.createElement('script');
+  
+    script.src = "https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js";
+    script.async = true;
+  
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
+  return (
+    <>
+      <p>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}" /></b></p>
+      <p>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status /></b></p>
+    </>
+  )
+
+}
+
 
 <span className="goldTitle">
 # Te damos la bienvenida a Alohomora 👋
 </span>
+
+<ServerData />
 
 ## ✨ ¡Prepárate para una experiencia mágica única! ✨ 
 
