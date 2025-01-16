@@ -50,7 +50,8 @@ function HomepageHeader() {
           <img src='img/AlohomoraSVG.svg' width={"750"} />
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className='jugadores'>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format=".../{max}" /></b></p>
+        <p className='jugadores'>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}">0</span></b></p>
+        <p className='jugadores'>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status>Offline</span></b></p>
         <div className={styles.buttons}>
           <div
             className="button button--secondary button--lg"
