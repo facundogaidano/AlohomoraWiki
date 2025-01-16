@@ -34,7 +34,7 @@ const DatosServerList = [
       <>
         Sumérgete en un entorno mágico donde cada rincón puede esconder sorpresas y misterios. 
         Aventúrate por pasadizos ocultos, descubre habitaciones secretas 
-        llenas de historia y maravíllate con paisajes impresionantes y llenos de vida.
+        llenas de historia y maravíllate con paisajes y construcciones impresionantes.
       </>
     ),
     flipped: false,
@@ -60,7 +60,7 @@ const DatosServerList = [
       <>
         Enfréntate a emocionantes misiones que pondrán a prueba tu ingenio y habilidad. 
         Ayuda a intrigantes personajes con sus problemas, resuelve complejos acertijos y 
-        demuestra tu ingenio en pruebas desafiantes que te llenarán de experiencia y pericia.
+        demuestra tu talento en pruebas desafiantes que te llenarán de experiencia y pericia.
       </>
     ),
     flipped: false,
@@ -72,8 +72,8 @@ const DatosServerList = [
     text: (
       <>
         Equípate con los más increíbles artilugios mágicos y medios de transporte encantados. 
-        Desde tu confiable varita hasta trasladores y escobas voladoras que te llevarán a lugares 
-        que nunca habrías imaginado. ¡Todo lo necesario para que tu aventura sea inolvidable!
+        Desde tu varita mágica hasta trasladores y escobas voladoras que te llevarán a lugares 
+        que siempre habías soñado. ¡Todo lo necesario para tu mágica aventura!
       </>
     ),
     flipped: true,
