@@ -21,10 +21,12 @@ export function ServerData() {
   }, []);
 
   return (
-    <>
-      <p>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}" /></b></p>
-      <p>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status /></b></p>
-    </>
+    <div className='jugadores'>
+      <span>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}">0</span></b></span>
+      <br></br>
+      <span>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status>Offline</span></b></span>
+      <br></br>
+    </div>
   )
 
 }
