@@ -46,13 +46,13 @@ const sidebars = {
           type: 'category',
           label: '🔮 Magia',
           collapsible: true,
-          items: ['Magia/Varita-mágicas', 'Magia/Hechizos', 'Magia/Escobas-voladoras', 'Magia/Resto-de-equipamiento-mágico'],
+          items: ['Magia/Varitas-mágicas', 'Magia/Hechizos', 'Magia/Escobas-voladoras', 'Magia/Resto-de-equipamiento-mágico'],
         },
         {
           type: 'category',
           label: '🏦 Economía',
           collapsible: true,
-          items: ['Economía/Dinero-Golderones', 'Economía/Puntos-de-experiencia', 'Economía/Créditos-Mágicos', 'Economía/Créditos-de-Examen'],
+          items: ['Economía/Dinero-Golderones', 'Economía/Puntos-de-Experiencia', 'Economía/Créditos-Mágicos', 'Economía/Créditos-de-Examen'],
         },
         {
           type: 'category',
@@ -64,7 +64,7 @@ const sidebars = {
           type: 'category',
           label: '🗺️ Movilidad',
           collapsible: true,
-          items: ['Movilidad/Red-Fum-de-chimeneas', 'Movilidad/Trasladores', 'Movilidad/Tren-Expreso', 'Movilidad/Bus-Sonámbulo', 'Movilidad/Metro'],
+          items: ['Movilidad/Red-Fum-de-chimeneas', 'Movilidad/Trasladores', 'Movilidad/Tren-Expreso', 'Movilidad/Autobús-Sonámbulo', 'Movilidad/Metro'],
         },
         {
           type: 'category',

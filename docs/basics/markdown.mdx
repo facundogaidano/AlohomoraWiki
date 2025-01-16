@@ -1,4 +1,27 @@
-# Welcome a la documentación.
+---
+title: 'Documentación'
+---
+
+import Titulo from '@site/src/components/Titulo'
+
+# <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
+
+## Cambio de color en el Título. \<Titulo />
+
+Ahora podemos modificar el **color** del Título de la página de esta forma:
+*Importante: Usar siempre el title de Markdown.*\
+*También se pueden usar var(), ejemplo color=\{var(--ifm-color-primary)} para el amarillo de Bienvenida.*
+
+```mdx
+---
+title: 'Documentación'
+---
+
+import Titulo from '@site/src/components/Titulo'
+
+# <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
+
+```
 
 Acá podes escribir texto normal.\
 Si queres hacer un salto de line necesitarás usar `\`
@@ -18,7 +41,7 @@ Si queres hacer un salto de line necesitarás usar `\`
 
 ## Details
 
-**IMPORTANTE** es necesario mantener `className="trasparent"`
+**IMPORTANTE** es necesario mantener `className="trasparent"` FUTURO CAMBIO DE NOMBRE
 
 ```jsx
 <details className="trasparent">
@@ -157,36 +180,6 @@ function HelloDocusaurus() {
 }
 ```
 
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts: **MIRAR MDX**
-
-```md
-:::info My info
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-```
-
-:::warning My info
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
 ## MDX and React Components
 
 [MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
@@ -229,7 +222,7 @@ export const Highlight = ({children, color}) => (
 );
 ```
 ``` jsx
-import Highlight from '../../src/components/Hightlight';
+import Highlight from '@site/src/components/Highlight';
 
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
@@ -260,57 +253,48 @@ This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 
 import Admonition from '@theme/Admonition';
 
-Importando este **Plugins de MDX** nos permite customizar de forma limitada nuestro **Admonition**
+Importando este **Plugins de MDX** nos permite customizar nuestros **Admonition**
 
-```jsx
-import Admonition from '@theme/Admonition';
-
-<Admonition type="tip" icon="🧾" title="Versión de Minecraft">
-  <p>El servidor solo es compatible con la versión **1.16.5** de Minecraft.</p>
-</Admonition>
-
-<Admonition type="info" icon="💡" title="Type válidos">
-  <p>El siguiente componente admite todos los tipos que ya tiene por defecto.</p>
-  <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
-</Admonition>
-```
-
-<Admonition type="tip" icon="🧾" title="Versión de Minecraft">
-  <p>El servidor solo es compatible con la versión **1.16.5** de Minecraft.</p>
-</Admonition>
-
-<Admonition type="info" icon="💡" title="Type válidos">
-  <p>El siguiente componente admite todos los tipos que ya tiene por defecto.</p>
-  <p>Los tipos válidos son los siguiente: `note`, `tip`, `info`, `warning` y `danger`</p>
-</Admonition>
-
-
-### Custom Admonition (2)
-
-Hay nuevas formas de cambiar y modificar los colores de todos los Admonitions, con el poder de [Swizzling](https://docusaurus.io/docs/swizzling) y 
-modificando la sección de [Admonition](https://docusaurus.community/knowledge/component-library/existing/Admonitions/) se pueden hacer estas nuevas cosas sin necesidad 
-de ir creando nuevas `className`.
-
-```css title="/src/css/custom.css"
-.theme-admonition.purple {
-  background-color: #350847;
-  border-color: purple;
-}
-```
+Formas de cambiar y modificar los colores de todos los Admonitions, con el poder de [Swizzling](https://docusaurus.io/docs/swizzling) y 
+modificando la sección de [Admonition](https://docusaurus.community/knowledge/component-library/existing/Admonitions/).
 
 ```jsx title="/docs/basics/markdown.mdx"
-<Admonition className="purple" type="info" icon="🎨" title="Purple!">
-  <p>Nuevo color, ¡sin cambiar el type!</p>
+<Admonition type="gold" title="Gold">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
-<Admonition type="golden"  title="New!">
-  <p>Nuevo color, ¡sin usar className!</p>
+<Admonition type="purple" title="Purple">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="teal" title="Teal">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="red" title="Red">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="green" title="Green">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="grey" title="Grey">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
 ```
-<Admonition className="purple" type="info" icon="🎨" title="Purple!">
-  <p>Nuevo color, ¡sin cambiar el type!</p>
+<Admonition type="gold" title="Gold">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
-<Admonition type="golden"  title="New!">
-  <p>Nuevo color, ¡sin usar className!</p>
+<Admonition type="purple" title="Purple">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="teal" title="Teal">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="red" title="Red">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="green" title="Green">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
+<Admonition type="grey" title="Grey">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
 
 ~~La lista de colores posibles son: `purple`, `gold`, `hacer más colores`~~
