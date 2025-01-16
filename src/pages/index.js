@@ -50,12 +50,17 @@ function HomepageHeader() {
           <img src='img/AlohomoraSVG.svg' width={"750"} />
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className='jugadores'>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}">0</span></b></p>
-        <p className='jugadores'>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status>Offline</span></b></p>
+        <div className='jugadores'>
+          <span>Jugadores Online: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-format="{online}/{max}">0</span></b></span>
+          <br></br>
+          <span>Estado: <b><span data-playercounter-ip="mc.alohomora.es" data-playercounter-status>Offline</span></b></span>
+          <br></br>
+        </div>
         <div className={styles.buttons}>
           <div
             className="button button--secondary button--lg"
-            onClick={handleCopy}>
+            onClick={handleCopy}
+            style={{marginTop:'1rem'}}>
               {copied ? <span>Copiado</span> : <span ref={divRef}>IP: mc.alohomora.es</span>}
           </div>
         </div>
