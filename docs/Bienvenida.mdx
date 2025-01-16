@@ -3,14 +3,15 @@ sidebar_label: '👋 Bienvenida'
 slug: '/'
 hide_table_of_contents: true
 ---
-import Admonition from '@theme/Admonition';
 import { useEffect } from 'react';
+import Admonition from '@theme/Admonition';
+import Titulo from '@site/src/components/Titulo'
 
 export function ServerData() {
   useEffect(() => {
     const script = document.createElement('script');
   
-    script.src = "https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js";
+    script.src = "https://rawcdn.githack.com/facundogaidano/mc-player-counter/refs/heads/master/src/mc-player-counter.js";
     script.async = true;
   
     document.body.appendChild(script);
@@ -31,10 +32,7 @@ export function ServerData() {
 
 }
 
-
-<span className="goldTitle">
-# Te damos la bienvenida a Alohomora 👋
-</span>
+# <Titulo color={'var(--ifm-color-primary)'}>Te damos la bienvenida a Alohomora 👋</Titulo>
 
 <ServerData />
 

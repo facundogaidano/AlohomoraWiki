@@ -1,4 +1,27 @@
-# Welcome a la documentación.
+---
+title: 'Documentación'
+---
+
+import Titulo from '@site/src/components/Titulo'
+
+# <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
+
+## Cambio de color en el Título. \<Titulo />
+
+Ahora podemos modificar el **color** del Título de la página de esta forma:
+*Importante: Usar siempre el title de Markdown.*\
+*También se pueden usar var(), ejemplo color=\{var(--ifm-color-primary)} para el amarillo de Bienvenida.*
+
+```mdx
+---
+title: 'Documentación'
+---
+
+import Titulo from '@site/src/components/Titulo'
+
+# <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
+
+```
 
 Acá podes escribir texto normal.\
 Si queres hacer un salto de line necesitarás usar `\`
@@ -18,7 +41,7 @@ Si queres hacer un salto de line necesitarás usar `\`
 
 ## Details
 
-**IMPORTANTE** es necesario mantener `className="trasparent"`
+**IMPORTANTE** es necesario mantener `className="trasparent"` FUTURO CAMBIO DE NOMBRE
 
 ```jsx
 <details className="trasparent">
@@ -157,36 +180,6 @@ function HelloDocusaurus() {
 }
 ```
 
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts: **MIRAR MDX**
-
-```md
-:::info My info
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-```
-
-:::warning My info
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
 ## MDX and React Components
 
 [MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
@@ -229,7 +222,7 @@ export const Highlight = ({children, color}) => (
 );
 ```
 ``` jsx
-import Highlight from '../../src/components/Hightlight';
+import Highlight from '@site/src/components/Highlight';
 
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
@@ -261,6 +254,10 @@ This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 import Admonition from '@theme/Admonition';
 
 Importando este **Plugins de MDX** nos permite customizar de forma limitada nuestro **Admonition**
+
+<Admonition type='danger' icon='⚠'>
+  **IMPORTANTE, ESTA FORMA DE USAR ADMONITION VA A SER ¡DEPRECATED!, USAR LA FORMA (2)**  
+</Admonition>
 
 ```jsx
 import Admonition from '@theme/Admonition';
