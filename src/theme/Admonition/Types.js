@@ -5,14 +5,24 @@ import AdmonitionTypeInfo from '@theme/Admonition/Type/Info';
 import AdmonitionTypeWarning from '@theme/Admonition/Type/Warning';
 import AdmonitionTypeDanger from '@theme/Admonition/Type/Danger';
 import AdmonitionTypeCaution from '@theme/Admonition/Type/Caution';
-import AdmonitionTypeGolden from './Type/Golden';
+import AdmonitionTypeGold from './Type/Gold';
+import AdmonitionTypeRed from './Type/Red';
+import AdmonitionTypeGrey from './Type/Grey';
+import AdmonitionTypeTeal from './Type/Teal';
+import AdmonitionTypeGreen from './Type/Green';
+import AdmonitionTypePurple from './Type/Purple';
 const admonitionTypes = {
   note: AdmonitionTypeNote,
   tip: AdmonitionTypeTip,
   info: AdmonitionTypeInfo,
   warning: AdmonitionTypeWarning,
   danger: AdmonitionTypeDanger,
-  golden: AdmonitionTypeGolden,
+  gold: AdmonitionTypeGold,
+  red: AdmonitionTypeRed,
+  grey: AdmonitionTypeGrey,
+  teal: AdmonitionTypeTeal,
+  green: AdmonitionTypeGreen,
+  purple: AdmonitionTypePurple,
 };
 // Undocumented legacy admonition type aliases
 // Provide hardcoded/untranslated retrocompatible label

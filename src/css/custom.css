@@ -158,23 +158,47 @@ details.trasparent {
 
 /* STYLING PAGE - CUSTOM ADMONITION */
 
-.alert--golden { /* AGREGAR MÁS */
+.alert--gold { /* AGREGAR MÁS */
   --ifm-alert-background-color: #866e35;
   --ifm-alert-background-color-highlight: #ce981b3d;
   --ifm-alert-foreground-color: rgb(255,255,255);
   --ifm-alert-border-color: #f2c14e;
 }
 
-.theme-admonition.purple { /* MODIFICAR COMO GOLDEN */
-  background-color: #350847;
-  border-color: purple;
+.alert--red {
+  --ifm-alert-background-color: var(--ifm-color-danger-contrast-background);
+  --ifm-alert-background-color-highlight: rgba(250, 56, 62, 0.15);
+  --ifm-alert-foreground-color: var(--ifm-color-danger-contrast-foreground);
+  --ifm-alert-border-color: var(--ifm-color-danger-dark);
+}
+
+.alert--grey {
+  --ifm-alert-background-color: var(--ifm-color-secondary-contrast-background);
+  --ifm-alert-background-color-highlight: rgba(235, 237, 240, 0.15);
+  --ifm-alert-foreground-color: var(--ifm-color-secondary-contrast-foreground);
+  --ifm-alert-border-color: var(--ifm-color-secondary-dark);
+}
+
+.alert--teal {
+  --ifm-alert-background-color: var(--ifm-color-info-contrast-background);
+  --ifm-alert-background-color-highlight: rgba(84, 199, 236, 0.15);
+  --ifm-alert-foreground-color: var(--ifm-color-info-contrast-foreground);
+  --ifm-alert-border-color: var(--ifm-color-info-dark);
+}
+
+.alert--green {
+  --ifm-alert-background-color: var(--ifm-color-success-contrast-background);
+  --ifm-alert-background-color-highlight: rgba(0, 164, 0, 0.15);
+  --ifm-alert-foreground-color: var(--ifm-color-success-contrast-foreground);
+  --ifm-alert-border-color: var(--ifm-color-success-dark);
+}
+
+.alert--purple {
+  --ifm-alert-background-color: #350847;
+  --ifm-alert-border-color: purple;
 }
 
 /* STYLYING PAGE - RANDOM/NOT REMEMBERING STUFF */
-
-span.goldTitle { /* VER DE CAMBIAR */
-  color: var(--ifm-color-primary)
-}
 
 span {
   margin: 0;
