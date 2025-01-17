@@ -9,6 +9,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid ico
 import Highlight from '@site/src/components/Highlight'
 import Titulo from '@site/src/components/Titulo'
 import Admonition from '@theme/Admonition';
+import Color from '@site/src/components/Color'
 
 library.add(fab, fas); // Add all icons to the library so you can use them without importing them individually.
 
@@ -17,6 +18,7 @@ export default {
   ...MDXComponents,
   FAIcon: FontAwesomeIcon, // Make the FontAwesomeIcon component available in MDX as <icon />.
   Highlight,
+  Color,
   Titulo,
   Admonition,
 };
