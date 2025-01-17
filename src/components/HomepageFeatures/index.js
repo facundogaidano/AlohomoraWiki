@@ -3,6 +3,7 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Columns from '../Columns';
 import Column from '../Column';
+import ReactPlayer from 'react-player/lazy'
 
 const FeatureList = [
   {
@@ -96,16 +97,19 @@ function Feature({Svg, title, description}) {
 
 function DatosServer({tag, title, videoUrl, text, flipped}) {
   const videoElement = (
-    <video 
-      aria-hidden="true" 
-      playsinline="" 
-      autoplay="true" 
-      muted="true" 
-      loop="true" 
-      className='borde-curvas Video'
-    >
-      <source src={videoUrl} type="video/mp4" />
-    </video>
+    <div className='video-container'>
+      <div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url={`${videoUrl}`}
+          muted={true}
+          playing
+          loop={true}
+          width='100%'
+          height='100%'
+        />
+      </div>
+    </div>
   );
 
   return (
