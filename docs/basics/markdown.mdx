@@ -186,14 +186,12 @@ function HelloDocusaurus() {
 Con las doble barras juntas se hace el estilo.
 
 ```jsx
-import {  } from "module";
 / / highlight-start
 <Hello>Hello World</Hello>
 / / highlight-end
 ```
 
 ```jsx
-import {  } from "module";
 // highlight-start
 <Hello>Hello World</Hello>
 // highlight-end
@@ -241,6 +239,9 @@ modificando la sección de [Admonition](https://docusaurus.community/knowledge/c
 <Admonition type="grey" title="Grey">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
+<Admonition type="gold" icon={<FAIcon icon="fa-brands fa-github" />} title="GitHub">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
 ```
 <Admonition type="gold" title="Gold">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
@@ -260,8 +261,10 @@ modificando la sección de [Admonition](https://docusaurus.community/knowledge/c
 <Admonition type="grey" title="Grey">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
+<Admonition type="gold" icon={<FAIcon icon="fa-brands fa-github" />} title="GitHub">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
 
-~~La lista de colores posibles son: `purple`, `gold`, `hacer más colores`~~
 
 ### Tabs
 

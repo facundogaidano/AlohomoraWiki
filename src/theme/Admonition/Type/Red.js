@@ -2,9 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
 import AdmonitionLayout from '@theme/Admonition/Layout';
+import IconInfo from '@theme/Admonition/Icon/Info';
 const infimaClassName = 'alert alert--red';
 const defaultProps = {
-  icon: '❕',
+  icon: <IconInfo />,
   title: (
     <Translate
       id="theme.admonition.red"
