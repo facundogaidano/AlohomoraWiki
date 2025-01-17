@@ -2,22 +2,19 @@
 title: 'Documentación'
 ---
 
-import Titulo from '@site/src/components/Titulo'
-
 # <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
 
 ## Cambio de color en el Título. \<Titulo />
 
 Ahora podemos modificar el **color** del Título de la página de esta forma:
 *Importante: Usar siempre el title de Markdown.*\
+*No es necesario importarlo, ya está dentro de MDX*\
 *También se pueden usar var(), ejemplo color=\{var(--ifm-color-primary)} para el amarillo de Bienvenida.*
 
 ```mdx
 ---
 title: 'Documentación'
 ---
-
-import Titulo from '@site/src/components/Titulo'
 
 # <Titulo color={'#57d4ae'}>Welcome a la documentación. 👋</Titulo>
 
@@ -189,14 +186,12 @@ function HelloDocusaurus() {
 Con las doble barras juntas se hace el estilo.
 
 ```jsx
-import {  } from "module";
 / / highlight-start
 <Hello>Hello World</Hello>
 / / highlight-end
 ```
 
 ```jsx
-import {  } from "module";
 // highlight-start
 <Hello>Hello World</Hello>
 // highlight-end
@@ -204,46 +199,13 @@ import {  } from "module";
 
 ### Highlight
 
-```jsx title="src/components/Highlight.js"
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-```
-``` jsx
-import Highlight from '@site/src/components/Highlight';
+<Highlight color={'var(--ifm-color-primary)'}>Highlight ya está implementado dentro de MDX, ya no es necesario importar la librería</Highlight>.
 
+``` jsx
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 ```
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
 
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
@@ -251,7 +213,7 @@ This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 
 ### Custom Admonition (1)
 
-import Admonition from '@theme/Admonition';
+<Highlight color={'var(--ifm-color-primary)'}>Admonition ya está implementado dentro de MDX, ya no es necesario importar la librería</Highlight>.
 
 Importando este **Plugins de MDX** nos permite customizar nuestros **Admonition**
 
@@ -277,6 +239,9 @@ modificando la sección de [Admonition](https://docusaurus.community/knowledge/c
 <Admonition type="grey" title="Grey">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
+<Admonition type="gold" icon={<FAIcon icon="fa-brands fa-github" />} title="GitHub">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
 ```
 <Admonition type="gold" title="Gold">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
@@ -296,8 +261,10 @@ modificando la sección de [Admonition](https://docusaurus.community/knowledge/c
 <Admonition type="grey" title="Grey">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
 </Admonition>
+<Admonition type="gold" icon={<FAIcon icon="fa-brands fa-github" />} title="GitHub">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan.</p>
+</Admonition>
 
-~~La lista de colores posibles son: `purple`, `gold`, `hacer más colores`~~
 
 ### Tabs
 

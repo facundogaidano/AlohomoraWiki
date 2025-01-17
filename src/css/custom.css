@@ -200,10 +200,6 @@ details.trasparent {
 
 /* STYLYING PAGE - RANDOM/NOT REMEMBERING STUFF */
 
-span {
-  margin: 0;
-}
-
 /* RESPONSIVENESS - TABLE */
 
 @media screen and (max-width: 996px) {
