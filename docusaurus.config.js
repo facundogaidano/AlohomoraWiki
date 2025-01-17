@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/600.ico',
 
   // Set the production url of your site here
-  url: 'https://facundogaidano.github.io',
+  url: 'https://docusaurus-2.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
