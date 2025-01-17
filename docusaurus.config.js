@@ -5,8 +5,12 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import 'dotenv/config';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const branch = process.env.BRANCH_REF_NAME;
+const baseUrl = branch === 'development' ? '/' : '/AlohomoraWiki/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,7 +22,7 @@ const config = {
   url: 'https://facundogaidano.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/AlohomoraWiki/',
+  baseUrl: baseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

@@ -118,15 +118,24 @@ details.trasparent {
   margin: 0.5rem 2rem;
 }
 
-.Video {
-  width: 100%;
-  max-width: 36rem; /* Mantenemos el ancho máximo de 34rem */
-  height: auto; /* Aseguramos que la altura se adapte automáticamente */
+.video-container {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%; /* Ajusta el tamaño según sea necesario */
+  margin: 0 auto; /* Centra el contenedor */
 }
 
-.borde-curvas { /* VIDEOS CURVAS */
-  border-radius: 15px
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
 }
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 .titulo {
   font-family: 'Eczar';
