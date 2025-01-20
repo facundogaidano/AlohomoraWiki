@@ -20,7 +20,7 @@ const FeatureList = [
     Svg: require('@site/static/img/1-16-5.svg').default,
     description: (
       <>
-        Explora un servidor de Minecraft Premium de cuentas oficiales, versión 1.16.5. Sumérgete en una experiencia única llena de magia, secretos y desafíos.
+        Explora este mundo mágico desde tu cuenta oficial de Minecraft Premium. Vive tu propia experiencia única llena de magia, secretos y desafíos.
       </>
     ),
   },
@@ -29,7 +29,7 @@ const FeatureList = [
 const DatosServerList = [
   {
     tag: 'MAPAS ORIGINALES',
-    title: 'Explora un vasto mundo lleno de secretos',
+    title: 'Explora un mundo lleno de secretos',
     videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
     text: (
       <>
@@ -41,8 +41,8 @@ const DatosServerList = [
     flipped: false,
   },
   {
-    tag: 'MAGIA AVANZADA',
-    title: 'Domina extraordinarios hechizos',
+    tag: 'MAGIA ASOMBROSA',
+    title: 'Domina hechizos extraordinarios',
     videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
     text: (
       <>
@@ -72,9 +72,9 @@ const DatosServerList = [
     videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
     text: (
       <>
-        Equípate con los más increíbles artilugios mágicos y medios de transporte encantados. 
-        Desde tu varita mágica hasta trasladores y escobas voladoras que te llevarán a lugares 
-        que siempre habías soñado. ¡Todo lo necesario para tu mágica aventura!
+        Equípate con los más increíbles artilugios y medios de transporte mágicos. 
+        Desde tu varita mágica hasta trasladores y escobas voladoras que te llevarán a los lugares 
+        que siempre habías deseado. ¡Todo lo necesario para tu mágica aventura!
       </>
     ),
     flipped: true,
