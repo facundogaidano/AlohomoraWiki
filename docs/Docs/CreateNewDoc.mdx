@@ -1,0 +1,67 @@
+---
+title: 'Documentacion - Crear un Docs'
+---
+
+## Explicación breve de un Docs
+
+En la ruta se encuentran todos los archivos que se usan para la documentación.
+```
+AlohomoraWiki
+└── docs
+```
+
+Es muy importante la puntuación y la ubicación de los archivos, ya que Docusaurus los ubica de esa manera.
+
+Todos los archivos que nos vamos a manejar son `.mdx`. Los cuales son archivos de texto plano que se pueden 
+usar para escribir la documentación con el añadido de poder escribir en JSX.
+
+## Crear un Docs
+
+Vamos a la carpeta `docs` y creamos un archivo `.mdx` con el nombre que queramos.\
+Por ejemplo, `my-doc.mdx`.
+
+### Front Matter
+
+Dentro del archivo, vamos a escribir el siguiente código:
+```mdx title="my-doc.mdx"
+//highlight-start
+---
+title: 'My document title'
+---
+//highlight-end
+```
+Eso de arriba se llama **Front Matter** y es necesario para que Docusaurus pueda leer el archivo.\
+En este caso, el título del archivo es `Documentacion - Crear un Docs`.
+
+Otro ejemplo de un Front Matter es:
+```mdx title="my-doc.mdx"
+//highlight-start
+---
+id: my-doc-id
+title: My document title
+description: My document description
+slug: /my-custom-url
+---
+//highlight-end
+```
+Donde `id` es el identificador del archivo, `title` es el título del archivo, `description` es la descripción del archivo y `slug` es la URL personalizada del archivo.
+
+### Markdown
+
+Después del Front Matter, podemos escribir en el documento como Markdown.
+
+```mdx title="my-doc.mdx"
+---
+id: my-doc-id
+title: My document title
+description: My document description
+slug: /my-custom-url
+---
+
+//highlight-start
+## Markdown Heading
+
+Markdown text with [links](../Intro.mdx)
+You can jump line with two spaces at the end of the line or with \ at the end.
+//highlight-end
+```

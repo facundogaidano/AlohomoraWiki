@@ -1,0 +1,54 @@
+---
+title: '<Tabs />'
+---
+
+## Componente Tabs
+
+Docusaurus nos provee del [componente `<Tabs>`](https://docusaurus.io/docs/markdown-features/tabs).
+
+Nosotros la modificamos un poco para que se vea mejor en nuestra documentación.
+
+```jsx
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+</Tabs>
+```
+<Tabs>
+  <TabItem value="apple" label="Apple" default>
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+
+### Custom Tabs
+
+Es posible agregarle atributos a los componentes `<Tabs>` y `<TabItem>` para que se vean de una forma diferente.
+Después de agregarle los atributos, se pueden modificar los estilos en el archivo `custom.css`.
+```jsx
+<Tabs>
+  <TabItem value="tab-1" label="Tab-1" attributes={{className: 'aurales'}} default>
+    <Highlight color='#5700ae'>Esto es un ejemplo de un TabItem personalizado. (1) </Highlight>
+  </TabItem>
+  <TabItem value="tab-2" label="Tab-2" attributes={{className: 'fenix'}}>
+    <Highlight color='#570000'>Esto es **otro** ejemplo de un TabItem personalizado. (2)</Highlight>
+  </TabItem>
+</Tabs>
+```
+<Tabs>
+  <TabItem value="tab-1" label="Tab-1" attributes={{className: 'aurales'}} default>
+    <Highlight color='#5700ae'>Esto es un ejemplo de un TabItem personalizado. (1) </Highlight>
+  </TabItem>
+  <TabItem value="tab-2" label="Tab-2" attributes={{className: 'fenix'}}>
+    <Highlight color='#570000'>Esto es **otro** ejemplo de un TabItem personalizado. (2)</Highlight>
+  </TabItem>
+</Tabs>

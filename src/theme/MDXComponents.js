@@ -10,6 +10,8 @@ import Highlight from '@site/src/components/Highlight'
 import Titulo from '@site/src/components/Titulo'
 import Admonition from '@theme/Admonition';
 import Color from '@site/src/components/Color'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 library.add(fab, fas); // Add all icons to the library so you can use them without importing them individually.
 
@@ -20,5 +22,7 @@ export default {
   Highlight,
   Color,
   Titulo,
+  Tabs,
+  TabItem,
   Admonition,
 };

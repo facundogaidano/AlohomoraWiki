@@ -82,6 +82,19 @@ const sidebars = {
     }
   ],
 
+  sidebarDocs: [
+    'Docs/Intro',
+    'Docs/FirstSteps',
+    'Docs/CreateNewDoc',
+    {
+      type: 'category',
+      collapsed: true,
+      collapsible: false,
+      label: 'Cómo agregar...',
+      items: ['Docs/How-To/Formatting', 'Docs/How-To/Details', 'Docs/How-To/Titulo', 'Docs/How-To/Admonition', 'Docs/How-To/Highlight', 'Docs/How-To/Color', 'Docs/How-To/Tabs', 'Docs/How-To/JS-in-MDX']
+    },
+  ],
+
 };
 
 export default sidebars;

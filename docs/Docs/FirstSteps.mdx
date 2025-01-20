@@ -1,0 +1,35 @@
+---
+title: 'Documentacion - Pasos Previos'
+---
+
+## Pasos Previos
+
+Antes de empezar a explicar cómo escribir y modificar la documentación, es necesario tener instalado y configurado Docusaurus en tu máquina.
+
+Es necesario tener instalado [Node.js](https://nodejs.org/en/download/) y [Git](https://git-scm.com/downloads) en tu máquina.\
+Cuando esté instalado todo, es necesario instalarse [VSCode](https://code.visualstudio.com/download). Podes seguir [este video](https://www.youtube.com/watch?v=IiQC41HWqcU) 
+que muestra un parte de este tutorial.
+
+## VSCode y clonar el repositorio
+
+En VSCode existe la opción de clorar un repositorio, para eso es necesario...
+- Abrir VSCode.
+- Iniciar sesión en GitHub.
+- [Clonar este repositorio](https://github.com/facundogaidano/alohomoraWiki) de Docusaurus en tu máquina desde VSCode.
+
+## Inicia Docusaurus
+
+En la terminal de VSCode:
+```bash
+npm start
+```
+
+El comando `npm start` inicia el servidor de Docusaurus y abre una ventana en tu navegador en https://localhost:3000/.
+
+### dotEnv
+Pero antes de eso, es necesario configurar [dotEnv](https://www.npmjs.com/package/dotenv). 
+Ya viene dentro de las dependencias del repositorio. Para configurarlo, es necesario crear un archivo `.env` en la raíz del proyecto y agregarle la siguiente línea:
+```
+BRANCH_REF_NAME=development
+```
+Hacemos esto para que Docusaurus sepa en qué está en un ambiente de desarrollo y **no inicie** dentro de https://localhost:3000/AlohomoraWiki/

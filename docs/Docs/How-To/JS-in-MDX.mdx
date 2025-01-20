@@ -1,0 +1,69 @@
+---
+title: 'JavaScript en MDX'
+---
+
+# JavaScript en MDX
+
+MDX es una extensión de Markdown que permite usar JSX en los archivos `.mdx`.\
+Esto nos permite usar componentes de React y JavaScript en los archivos `.mdx`.
+
+## Importar Componentes
+
+Para importar componentes de React en los archivos `.mdx`, se debe hacer de la siguiente forma:
+
+```jsx
+import { Componente } from '../components/Componente';
+```
+
+## Funciones
+
+Para declarar funciones en los archivos `.mdx`, se debe hacer de la siguiente forma:
+
+```jsx
+export const funcion = () => {
+  return 'Hola mundo';
+};
+```
+
+### Variables
+
+Para declarar variables en los archivos `.mdx`, se debe hacer de la siguiente forma, siempre tienen que estar dentro de una funcion:
+
+```jsx
+export const funcion = () => {
+  const variable = 'Hola mundo';
+  return variable;
+};
+```
+## Uso de JavaScript en MDX
+
+También nos permite el uso de variables y funciones de JavaScript en los archivos `.mdx` en formato JSX.
+Un ejemplo de esto es el uso de la función `map()` para recorrer un array y mostrarlo en pantalla.
+
+```jsx
+export const NumberList = () => {
+  const numbers = [1, 2, 3, 4, 5];
+  return (
+    <ul>
+      {numbers.map((number) => (
+        <li key={number}>{number}</li>
+      ))}
+    </ul>
+  );
+};
+
+
+<NumberList />
+```
+export const NumberList = () => {
+  const numbers = [1, 2, 3, 4, 5];
+  return (
+    <ul>
+      {numbers.map((number) => (
+        <li key={number}>{number}</li>
+      ))}
+    </ul>
+  );
+};
+
+<NumberList />
