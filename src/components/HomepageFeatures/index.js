@@ -20,7 +20,7 @@ const FeatureList = [
     Svg: require('@site/static/img/1-16-5.svg').default,
     description: (
       <>
-        Explora este servidor de Minecraft Premium para cuentas oficiales basado en un mundo mágico. Vive tu propia experiencia única llena de magia, secretos y desafíos.
+        Explora este mundo mágico desde tu cuenta oficial de Minecraft Premium. Vive tu propia experiencia única llena de magia, secretos y desafíos.
       </>
     ),
   },
