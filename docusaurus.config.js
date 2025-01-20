@@ -100,9 +100,9 @@ const config = {
             sidebarId: 'sidebarWiki',
             position: 'left',
             label: 'Wiki',
-            to: '/Wiki',
+            to: '/wiki',
           },
-          {to: '/Blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://tienda.alohomora.es',
             label: 'Tienda',
