@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import Columns from '../Columns';
 import Column from '../Column';
 
-import alohomoraPlayback from '@site/static/video/videoplayback1080p.mp4';
+import alohomoraPlayback from '@site/static/video/videoplayback720p.webm';
 
 const FeatureList = [
   {
@@ -101,7 +101,7 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
     <div className='video-container'>
       <div className='player-wrapper'>
         <video autoPlay loop muted className='react-player'>
-          <source src={`${videoUrl}`} type='video/mp4' />
+          <source src={`${videoUrl}`} type='video/webm' />
         </video>
       </div>
     </div>
