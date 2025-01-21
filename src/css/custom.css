@@ -416,4 +416,8 @@ a.footer__link-item:hover {
     display: flex;
     flex-direction: column;
   }
+
+  .whats-new-feature__eyebrow {
+    margin: 2rem 2rem 0.5rem;
+  }
 }
