@@ -100,7 +100,7 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
   const videoElement = (
     <div className='video-container'>
       <div className='player-wrapper'>
-        <video autoPlay loop muted className='react-player'>
+        <video autoPlay playsInline loop muted className='react-player'>
           <source src={`${videoUrl}`} type='video/webm' />
         </video>
       </div>
