@@ -75,6 +75,10 @@ html[data-theme='dark'] {
   background-color: var(--navbar-docs-primary); 
 }
 
+.cardContainer_fWXF {
+  background-color: var(--navbar-docs-primary);
+}
+
 /* MAIN PAGE - ALOHOMORA MAIN DIV */
 
 .hero--primary { /* MAIN PAGE */
@@ -98,10 +102,84 @@ html[data-theme='dark'] {
 
 /* MAIN PAGE - ABOUT SERVER & DETAILS */
 
-details.trasparent {
+details.transparent {
   --docusaurus-details-decoration-color: var(--ifm-color-primary);
   background-color: transparent;
   border-color: var(--ifm-color-primary);
+}
+
+.tabs-container {
+  border: 1px solid var(--ifm-color-primary);
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border-radius: var(--ifm-alert-border-radius);
+  color: var(--ifm-alert-foreground-color);
+  padding: 0.5rem;
+  background-color: var(--ifm-alert-background-color);
+}
+
+.tabItem_Ymn6 {
+  padding: 0.5rem 0.5rem;
+}
+
+/* .unique-tabs .tabs__item--active {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  border: 0;
+  border-radius: var(--ifm-global-radius);
+}
+.unique-tabs .tabs__item {
+  margin-right: 8px;
+  line-height: 16px;
+} */
+
+.tabs__item {
+  margin-right: 8px;
+  line-height: 16px;
+}
+
+.aurales[aria-selected='true'] {
+  /* background-color: #55FFFF; */
+  border-bottom-color: #55FFFF;
+}
+
+.aurales {
+  color: #55FFFF;
+}
+
+.fenix[aria-selected='true'] {
+  /* background-color: #FFAA00; */
+  border-bottom-color: #FFAA00;
+}
+
+.fenix {
+  color: #FFAA00;
+}
+
+.elfo[aria-selected='true'] {
+  /* background-color: #55FF55; */
+  border-bottom-color: #55FF55;
+}
+
+.elfo {
+  color: #55FF55;
+}
+
+.licantropos[aria-selected='true'] {
+  /* background-color: #AAA; */
+  border-bottom-color: #AAA;
+}
+
+.licantropos {
+  color: #AAA;
+}
+
+.mortemagos[aria-selected='true'] {
+  /* background-color: #555; */
+  border-bottom-color: #555;
+}
+
+.mortemagos {
+  color: #555;
 }
 
 .whats-new-feature__eyebrow {

@@ -1,0 +1,43 @@
+---
+title: '<Details />'
+---
+
+Para hacer el cuadro *<details />* se hace con el siguiente código:
+
+```JSX
+<details>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+```
+<details>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+
+Nosotros lo usamos con la `className='transparent'` para que no se vea el color del cuadro.
+
+```JSX
+<details className='transparent'>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+```
+<details className='transparent'>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+
+Para hacer que el cuadro se abra por defecto, se le agrega el atributo `open`.
+
+```JSX
+<details className='transparent' open>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+```
+<details className='transparent' open>
+  <summary>Click to expand!</summary>
+  This is a hidden text.
+</details>
+

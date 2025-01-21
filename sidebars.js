@@ -27,17 +27,38 @@ const sidebars = {
       collapsible: false,
       collapsed: true,
       label: '📚 Información General',
+      link: {
+        type: 'generated-index',
+        title: '📚 Información General',
+        description: 'Index de información del servidor',
+        slug: '/Informacion-General',
+        keywords: ['informacion-general'],
+      },
       items: [
-        'Normas',
+        'Informacion-General/Normas',
         {
           type: 'category',
           label: '⁉️ Tutoriales',
-          items: ['Tutoriales/Cómo-entrar-al-servidor', 'Tutoriales/Cómo-instalar-OptiFine', 'Tutoriales/Preguntas-frecuentes', 'Tutoriales/Comandos-Principales']
+          link: {
+            type: 'generated-index',
+            title: '⁉️ Tutoriales',
+            description: 'Index de información del servidor',
+            slug: '/Tutoriales',
+            keywords: ['tutoriales'],
+          },
+          items: ['Informacion-General/Tutoriales/Cómo-entrar-al-servidor', 'Informacion-General/Tutoriales/Cómo-instalar-OptiFine', 'Informacion-General/Tutoriales/Preguntas-frecuentes', 'Informacion-General/Tutoriales/Comandos-Principales']
         }
       ],
     },
     {
       type: 'category',
+      link: {
+        type: 'generated-index',
+        title: '🎮 Jugabilidad',
+        description: 'Index de la jugabilidad del servidor',
+        slug: '/Jugabilidad',
+        keywords: ['jugabilidad'],
+      },
       collapsed: true,
       collapsible: false,
       label: '🎮 Jugabilidad',
@@ -45,41 +66,96 @@ const sidebars = {
         {
           type: 'category',
           label: '🔮 Magia',
+          link: {
+            type: 'generated-index',
+            title: '🔮 Magia',
+            description: 'Index de la magia en el servidor',
+            slug: '/Magia',
+            keywords: ['magia'],
+          },
           collapsible: true,
-          items: ['Magia/Varitas-mágicas', 'Magia/Hechizos', 'Magia/Escobas-voladoras', 'Magia/Resto-de-equipamiento-mágico'],
+          items: ['Jugabilidad/Magia/Varitas-mágicas', 'Jugabilidad/Magia/Hechizos', 'Jugabilidad/Magia/Escobas-voladoras', 'Jugabilidad/Magia/Resto-de-equipamiento-mágico'],
         },
         {
           type: 'category',
           label: '🏦 Economía',
+          link: {
+            type: 'generated-index',
+            title: '🏦 Economía',
+            description: 'Index de la economía en el servidor',
+            slug: '/Economia',
+            keywords: ['economia'],
+          },
           collapsible: true,
-          items: ['Economía/Dinero-Golderones', 'Economía/Puntos-de-Experiencia', 'Economía/Créditos-Mágicos', 'Economía/Créditos-de-Examen'],
+          items: ['Jugabilidad/Economía/Dinero-Golderones', 'Jugabilidad/Economía/Puntos-de-Experiencia', 'Jugabilidad/Economía/Créditos-Mágicos', 'Jugabilidad/Economía/Créditos-de-Examen'],
         },
         {
           type: 'category',
           label: '🤹 Actividades',
+          link: {
+            type: 'generated-index',
+            title: '🤹 Actividades',
+            description: 'Index de actividades en el servidor',
+            slug: '/Actividades',
+            keywords: ['actividades'],
+          },
           collapsible: true,
-          items: ['Actividades/Educación-Mágica', 'Actividades/Misiones', 'Actividades/Acertijos', 'Actividades/Cofres-secretos', 'Actividades/Minijuegos', 'Actividades/Lucha-con-mobs']
+          items: ['Jugabilidad/Actividades/Educación-Mágica', 'Jugabilidad/Actividades/Misiones', 'Jugabilidad/Actividades/Acertijos', 'Jugabilidad/Actividades/Cofres-secretos', 'Jugabilidad/Actividades/Minijuegos', 'Jugabilidad/Actividades/Lucha-con-mobs']
         },
         {
           type: 'category',
           label: '🗺️ Movilidad',
+          link: {
+            type: 'generated-index',
+            title: '🗺️ Movilidad',
+            description: 'Index de movilidad en el servidor',
+            slug: '/Movilidad',
+            keywords: ['movilidad'],
+          },
           collapsible: true,
-          items: ['Movilidad/Red-Fum-de-chimeneas', 'Movilidad/Trasladores', 'Movilidad/Tren-Expreso', 'Movilidad/Autobús-Sonámbulo', 'Movilidad/Metro'],
+          items: ['Jugabilidad/Movilidad/Red-Fum-de-chimeneas', 'Jugabilidad/Movilidad/Trasladores', 'Jugabilidad/Movilidad/Tren-Expreso', 'Jugabilidad/Movilidad/Autobús-Sonámbulo', 'Jugabilidad/Movilidad/Metro'],
         },
         {
           type: 'category',
           label: '🃏 Otros',
+          link: {
+            type: 'generated-index',
+            title: '🃏 Otros',
+            description: 'Index de "otros" en el servidor',
+            slug: '/Otros',
+            keywords: ['otros'],
+          },
           collapsible: true,
-          items: ['Otros/Rangos'] 
+          items: ['Jugabilidad/Otros/Rangos'] 
         },
       ]
     },
     {
       type: 'category',
       collapsible: true,
+      link: {
+        type: 'generated-index',
+        title: '💲 Tienda del Servidor',
+        description: 'Index de la tienda en el servidor',
+        slug: '/Tienda',
+        keywords: ['tienda'],
+      },
       label: '💲 Tienda del Servidor',
       items: ['Tienda/Información','Tienda/Reselección', 'Tienda/Apodo', 'Tienda/Lealtades', 'Tienda/Varitas', 'Tienda/Sombreros', 'Tienda/Mascotas'],
     }
+  ],
+
+  sidebarDocs: [
+    'Docs/Intro',
+    'Docs/FirstSteps',
+    'Docs/CreateNewDoc',
+    {
+      type: 'category',
+      collapsed: true,
+      collapsible: false,
+      label: 'Cómo agregar...',
+      items: ['Docs/How-To/Formatting', 'Docs/How-To/Details', 'Docs/How-To/Titulo', 'Docs/How-To/Admonition', 'Docs/How-To/Highlight', 'Docs/How-To/Color', 'Docs/How-To/Tabs', 'Docs/How-To/JS-in-MDX']
+    },
   ],
 
 };

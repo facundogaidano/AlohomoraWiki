@@ -1,0 +1,25 @@
+---
+title: <Titulo />
+---
+# <Titulo color='#57d4ae'>Mi título principal</Titulo>
+
+```JSX
+# <Titulo color='#57d4ae'>Mi título principal</Titulo>
+```
+
+Complementamos un componente propio de React llamado `<Titulo />` con el Markdown \# para agregarle al título colores.\
+Este componente ya está incorporado dentro de MDXComponents y se puede usar en cualquier archivo `.mdx` sin necesidad de importarlo.
+
+Debemos **agregarle el Front Matter** al archivo para **no romper con el título** que se mostrará en la pestaña del navegador.
+
+Un ejemplo es cómo está armada esta página:
+
+```mdx
+//highlight-start
+---
+title: '<Titulo />'
+---
+//highlight-end
+
+# <Titulo color='#57d4ae'>Mi título principal</Titulo>
+```
