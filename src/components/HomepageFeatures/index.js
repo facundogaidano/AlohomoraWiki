@@ -103,6 +103,7 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
           className='react-player'
           url={`${videoUrl}`}
           muted={true}
+          controls={false}
           playing
           loop={true}
           width='100%'
