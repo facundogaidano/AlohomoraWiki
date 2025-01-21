@@ -75,6 +75,10 @@ html[data-theme='dark'] {
   background-color: var(--navbar-docs-primary); 
 }
 
+.cardContainer_fWXF {
+  background-color: var(--navbar-docs-primary);
+}
+
 /* MAIN PAGE - ALOHOMORA MAIN DIV */
 
 .hero--primary { /* MAIN PAGE */
