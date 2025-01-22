@@ -291,7 +291,7 @@ a.footer__link-item:hover {
 
 .discord-link {
   align-items: center;
-  display: flex;
+  display: flex !important;
 }
 
 .discord-link:before {
