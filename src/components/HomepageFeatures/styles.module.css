@@ -1,7 +1,7 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
   width: 100%;
   background-color: #180f1c;
 }
