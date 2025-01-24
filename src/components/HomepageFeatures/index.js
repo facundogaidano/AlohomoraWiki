@@ -39,7 +39,7 @@ const DatosServerList = [
         llenas de historia y maravíllate con paisajes y construcciones impresionantes.
       </>
     ),
-    flipped: false,
+    isFlipped: false,
   },
   {
     tag: 'MAGIA ASOMBROSA',
@@ -52,7 +52,7 @@ const DatosServerList = [
         combina diferentes encantamientos que te ayudarán en tus aventuras.
       </>
     ),
-    flipped: true,
+    isFlipped: true,
   },
   {
     tag: 'DESAFÍOS ÉPICOS',
@@ -65,7 +65,7 @@ const DatosServerList = [
         demuestra tu talento en pruebas desafiantes que te llenarán de experiencia y pericia.
       </>
     ),
-    flipped: false,
+    isFlipped: false,
   },
   {
     tag: 'ARTEFACTOS MÁGICOS',
@@ -78,7 +78,7 @@ const DatosServerList = [
         que siempre habías deseado. ¡Todo lo necesario para tu mágica aventura!
       </>
     ),
-    flipped: true,
+    isFlipped: true,
   },
 ];
 
@@ -89,14 +89,14 @@ function Feature({Svg, title, description}) {
       <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3" className='titulo'>{title}</Heading>
-        <p className='cuerpo'>{description}</p>
+        <Heading as="h3" className='h3-title'>{title}</Heading>
+        <p className='feature-body'>{description}</p>
       </div>
     </div>
   );
 }
 
-function DatosServer({tag, title, videoUrl, text, flipped}) {
+function DatosServer({tag, title, videoUrl, text, isFlipped}) {
   const videoElement = (
     <div className='video-container'>
       <div className='player-wrapper'>
@@ -109,22 +109,22 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
 
   return (
     <>
-      {flipped ? (
-        <Columns className='flipped row row--no-gutters'>
+      {isFlipped ? (
+        <Columns className='isFlipped row row--no-gutters'>
           <Column className='text--center'>{videoElement}</Column>
           <Column className='text--left' style={{alignSelf: 'center'}}>
-            <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
-            <Heading as='h3' className='textoo titulo'>{title}</Heading>
-            <div className='textoo cuerpo'>{text}</div>
+            <Heading as='h4' className='video-desc-tag'>{tag}</Heading>
+            <Heading as='h3' className='video-description h3-title'>{title}</Heading>
+            <div className='video-description feature-body'>{text}</div>
           </Column>
         </Columns>
       ) : (
         <Columns className='row row--no-gutters'>
           <Column className='text--center'>{videoElement}</Column>
           <Column className='text--left' style={{alignSelf: 'center'}}>
-          <Heading as='h4' className='whats-new-feature__eyebrow'>{tag}</Heading>
-          <Heading as='h3' className='textoo titulo'>{title}</Heading>
-            <div className='textoo cuerpo'>{text}</div>
+          <Heading as='h4' className='video-desc-tag'>{tag}</Heading>
+          <Heading as='h3' className='video-description h3-title'>{title}</Heading>
+            <div className='video-description feature-body'>{text}</div>
           </Column>
         </Columns>
       )}

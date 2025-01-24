@@ -19,7 +19,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --navbar-docs-primary: #180f1c;
-  --footer-background: #1c1221;
+  --mainnav-mainnav-footer-background: #1c1221;
   user-select: none
 }
 
@@ -39,7 +39,7 @@ html[data-theme='dark'] {
 /* Navbar stuff - Icons - Style - Etc */
 
 .navbar {
-  background-color: var(--footer-background);
+  background-color: var(--mainnav-footer-background);
 }
 
 .features_t9lD {
@@ -116,52 +116,84 @@ details.transparent {
   line-height: 16px;
 }
 
-.aurales[aria-selected='true'] {
-  /* background-color: #55FFFF; */
-  border-bottom-color: #55FFFF;
+/* DETAILS COLORS*/
+
+  .aurales[aria-selected='true'] {
+    /* background-color: #55FFFF; */
+    border-bottom-color: #55FFFF;
+  }
+
+  .aurales {
+    color: #55FFFF;
+  }
+
+  .fenix[aria-selected='true'] {
+    /* background-color: #FFAA00; */
+    border-bottom-color: #FFAA00;
+  }
+
+  .fenix {
+    color: #FFAA00;
+  }
+
+  .elfo[aria-selected='true'] {
+    /* background-color: #55FF55; */
+    border-bottom-color: #55FF55;
+  }
+
+  .elfo {
+    color: #55FF55;
+  }
+
+  .licantropos[aria-selected='true'] {
+    /* background-color: #AAA; */
+    border-bottom-color: #AAA;
+  }
+
+  .licantropos {
+    color: #AAA;
+  }
+
+  .mortemagos[aria-selected='true'] {
+    /* background-color: #555; */
+    border-bottom-color: #555;
+  }
+
+  .mortemagos {
+    color: #555;
+  }
+
+/* FEATURES PART */
+
+.feature-body {
+  font-family: 'Merriweather';
+  font-size: 1rem;
 }
 
-.aurales {
-  color: #55FFFF;
+.video-container { /* VIDEO STUFF START */
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.fenix[aria-selected='true'] {
-  /* background-color: #FFAA00; */
-  border-bottom-color: #FFAA00;
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
 }
 
-.fenix {
-  color: #FFAA00;
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.elfo[aria-selected='true'] {
-  /* background-color: #55FF55; */
-  border-bottom-color: #55FF55;
+video {
+  width: 100% !important;
+  height: auto !important;
 }
 
-.elfo {
-  color: #55FF55;
-}
-
-.licantropos[aria-selected='true'] {
-  /* background-color: #AAA; */
-  border-bottom-color: #AAA;
-}
-
-.licantropos {
-  color: #AAA;
-}
-
-.mortemagos[aria-selected='true'] {
-  /* background-color: #555; */
-  border-bottom-color: #555;
-}
-
-.mortemagos {
-  color: #555;
-}
-
-.whats-new-feature__eyebrow {
+.video-desc-tag {
   font-size: 0.75rem;
   line-height: 0.6875rem;
   color: var(--navbar-docs-primary);
@@ -175,55 +207,25 @@ details.transparent {
   margin: 0.5rem 2rem;
 }
 
-.video-container {
-  border-radius: 15px;
-  overflow: hidden;
-  width: 90%; /* Ajusta el tamaño según sea necesario */
-  margin: 0 auto; /* Centra el contenedor */
-}
-
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
-}
-
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-video {
-  /* override other styles to make responsive */
-  width: 100%    !important;
-  height: auto   !important;
-}
-
-
-.titulo {
+.h3-title {
   font-family: 'Eczar';
   color: var(--ifm-color-primary);
   font-size: 1.65rem;
 }
 
-.cuerpo {
-  font-family: 'Merriweather';
-  font-size: 1rem;
-}
-
-.textoo {
+.video-description {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.flipped {
+.isFlipped { /* VIDEO STUFF END */
   flex-direction: row-reverse;
 }
 
 /* MAIN PAGE - FOOTER STUFF */
 
 .footer { /* FOOTER */
-  background-color: var(--footer-background);
+  background-color: var(--mainnav-footer-background);
   padding: 1.5rem;
   color: #636363;
 }
@@ -234,7 +236,7 @@ video {
 }
 
 .footer__link-separator {
-  color: var(--footer-background);
+  color: var(--mainnav-footer-background);
 }
 
 a.footer__link-item:hover {
@@ -404,12 +406,8 @@ a.footer__link-item:hover {
 /* RESPONSIVENESS - TABLE */
 
 @media screen and (max-width: 996px) {
-  .Video {
-    width: 16rem;
-  }
-
   .navbar-sidebar {
-    background-color: var(--footer-background);
+    background-color: var(--mainnav-footer-background);
   }
 
   .footer__links {
@@ -417,7 +415,7 @@ a.footer__link-item:hover {
     flex-direction: column;
   }
 
-  .whats-new-feature__eyebrow {
+  .video-desc-tag {
     margin: 2rem 2rem 0.5rem;
   }
 }
