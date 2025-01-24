@@ -107,11 +107,15 @@ const config = {
             href: 'https://tienda.alohomora.es',
             label: 'Tienda',
             position: 'right',
+            target: '_blank',
+            className: 'store-link',
           },
           {
             href: 'https://discord.alohomora.es',
+            className: ' discord-link',
+            label: 'Discord',
             position: 'right',
-            className: 'navbar--discord-link',
+            target: '_blank',
           },
         ],
       },
@@ -119,25 +123,24 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Comunidad',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.alohomora.es',
-              },
-              {
-                label: 'Youtube',
-                href: 'https://www.youtube.com/@AlohomoraServer',
-              },
-              {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/alohomoraserver',
-              },
-              {
-                label: 'X / Twitter',
-                href: 'https://x.com/AlohomoraServer',
-              },
-            ],
+            label: 'Discord',
+            href: 'https://discord.alohomora.es',
+            className: 'discord-link',
+          },
+          {
+            label: 'Youtube',
+            href: 'https://www.youtube.com/@AlohomoraServer',
+            className: 'youtube-link',
+          },
+          {
+            label: 'Instagram',
+            href: 'https://www.instagram.com/alohomoraserver',
+            className: 'instagram-link',
+          },
+          {
+            label: 'X / Twitter',
+            href: 'https://x.com/AlohomoraServer',
+            className: 'x-link',
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Alohomora Server. Built with Docusaurus.`,

@@ -3,7 +3,8 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Columns from '../Columns';
 import Column from '../Column';
-import ReactPlayer from 'react-player/lazy'
+
+import alohomoraPlayback from '@site/static/video/videoplayback720p.webm';
 
 const FeatureList = [
   {
@@ -30,7 +31,7 @@ const DatosServerList = [
   {
     tag: 'MAPAS ORIGINALES',
     title: 'Explora un mundo lleno de secretos',
-    videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
+    videoUrl: alohomoraPlayback,
     text: (
       <>
         Sumérgete en un entorno mágico donde cada rincón puede esconder sorpresas y misterios. 
@@ -43,7 +44,7 @@ const DatosServerList = [
   {
     tag: 'MAGIA ASOMBROSA',
     title: 'Domina hechizos extraordinarios',
-    videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
+    videoUrl: alohomoraPlayback,
     text: (
       <>
         Aprende y mejora tus habilidades mágicas hasta su máximo potencial para aumentar tu poder y maestría. 
@@ -56,7 +57,7 @@ const DatosServerList = [
   {
     tag: 'DESAFÍOS ÉPICOS',
     title: 'Completa misiones únicas',
-    videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
+    videoUrl: alohomoraPlayback,
     text: (
       <>
         Enfréntate a emocionantes misiones que pondrán a prueba tu ingenio y habilidad. 
@@ -69,7 +70,7 @@ const DatosServerList = [
   {
     tag: 'ARTEFACTOS MÁGICOS',
     title: 'Equipamiento y transporte hechizado',
-    videoUrl: 'https://tekeye.uk/html/images/Joren_Falls_Izu_Jap.mp4',
+    videoUrl: alohomoraPlayback,
     text: (
       <>
         Equípate con los más increíbles artilugios y medios de transporte mágicos. 
@@ -99,15 +100,9 @@ function DatosServer({tag, title, videoUrl, text, flipped}) {
   const videoElement = (
     <div className='video-container'>
       <div className='player-wrapper'>
-        <ReactPlayer
-          className='react-player'
-          url={`${videoUrl}`}
-          muted={true}
-          playing
-          loop={true}
-          width='100%'
-          height='100%'
-        />
+        <video autoPlay playsInline loop muted className='react-player'>
+          <source src={`${videoUrl}`} type='video/webm' />
+        </video>
       </div>
     </div>
   );
